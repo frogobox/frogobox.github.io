@@ -1,6 +1,5 @@
 ![](docs/image/screen-shoot.png?raw=true)
-## Company Profile Website
-- Template Website For Play Store
+## Company Profile Frogobox ID Website
 - App-ads.txt include
 - Privacy Policy include
 
