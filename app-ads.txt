@@ -1,6 +1,7 @@
 google.com, pub-3012744818648238, DIRECT, f08c47fec0942fa0
 google.com, pub-3999524823523192, DIRECT, f08c47fec0942fa0
 google.com, pub-2963185309167575, DIRECT, f08c47fec0942fa0
+google.com, pub-6741582747146115, DIRECT, f08c47fec0942fa0
 admixer.net, 4ca083cd-412f-49fe-b832-5b66ee490d9a, RESELLER
 criteo.com, B-057955, RESELLER, 9fac4a4a87c2a44f
 meitu.com, 282, RESELLER
