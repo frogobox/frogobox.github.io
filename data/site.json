@@ -179,8 +179,8 @@
   "contact": {
     "sectionTitle": "Get In Touch",
     "sectionSubtitle": "Tell us about your project — we'll get back to you within 24 hours",
-    "email": "hello@frogobox.com",
-    "phone": "+62 812 3456 7890",
+    "email": "frogoboxmedia@gmail.com",
+    "phone": "+62 8135 7108 568",
     "address": "Probolinggo, East Java, Indonesia",
     "formButton": "Send Proposal Request"
   },
@@ -207,7 +207,7 @@
     "social": [
       {
         "platform": "github",
-        "url": "https://github.com/nickmafra",
+        "url": "https://github.com/frogobox",
         "label": "GitHub"
       },
       {
@@ -222,7 +222,7 @@
       },
       {
         "platform": "email",
-        "url": "mailto:hello@frogobox.com",
+        "url": "mailto:frogoboxmedia@gmail.com",
         "label": "Email"
       }
     ],
