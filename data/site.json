@@ -14,8 +14,8 @@
     "title": "We Build Scalable Digital Solutions",
     "highlight": "Beyond The Box",
     "tagline": "From concept to deployment — we engineer robust software solutions that transform businesses and accelerate growth.",
-    "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    "videoId": "dQw4w9WgXcQ",
+    "videoUrl": "https://www.youtube.com/embed/w2JOG9mbCiI",
+    "videoId": "w2JOG9mbCiI",
     "ctaPrimary": {
       "text": "Get Free Consultation",
       "href": "#contact"
@@ -25,10 +25,22 @@
       "href": "#portfolio"
     },
     "stats": [
-      { "value": "50+", "label": "Projects Delivered" },
-      { "value": "30+", "label": "Happy Clients" },
-      { "value": "5+", "label": "Years Experience" },
-      { "value": "99%", "label": "Client Satisfaction" }
+      {
+        "value": "50+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "30+",
+        "label": "Happy Clients"
+      },
+      {
+        "value": "5+",
+        "label": "Years Experience"
+      },
+      {
+        "value": "99%",
+        "label": "Client Satisfaction"
+      }
     ]
   },
   "services": {
@@ -175,16 +187,44 @@
   "footer": {
     "description": "Building scalable digital solutions for forward-thinking businesses across Southeast Asia.",
     "navigation": [
-      { "label": "Services", "href": "#services" },
-      { "label": "Portfolio", "href": "#portfolio" },
-      { "label": "About", "href": "#why-us" },
-      { "label": "Contact", "href": "#contact" }
+      {
+        "label": "Services",
+        "href": "#services"
+      },
+      {
+        "label": "Portfolio",
+        "href": "#portfolio"
+      },
+      {
+        "label": "About",
+        "href": "#why-us"
+      },
+      {
+        "label": "Contact",
+        "href": "#contact"
+      }
     ],
     "social": [
-      { "platform": "github", "url": "https://github.com/nickmafra", "label": "GitHub" },
-      { "platform": "linkedin", "url": "https://linkedin.com/company/frogobox", "label": "LinkedIn" },
-      { "platform": "instagram", "url": "https://instagram.com/frogobox", "label": "Instagram" },
-      { "platform": "email", "url": "mailto:hello@frogobox.com", "label": "Email" }
+      {
+        "platform": "github",
+        "url": "https://github.com/nickmafra",
+        "label": "GitHub"
+      },
+      {
+        "platform": "linkedin",
+        "url": "https://linkedin.com/company/frogobox",
+        "label": "LinkedIn"
+      },
+      {
+        "platform": "instagram",
+        "url": "https://instagram.com/frogobox",
+        "label": "Instagram"
+      },
+      {
+        "platform": "email",
+        "url": "mailto:hello@frogobox.com",
+        "label": "Email"
+      }
     ],
     "copyright": "© 2026 Frogobox Media Id. All rights reserved."
   }

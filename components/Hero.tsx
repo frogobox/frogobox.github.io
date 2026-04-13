@@ -45,8 +45,8 @@ export default function Hero({ data }: HeroProps) {
           }}
         />
         <iframe
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[100vw] h-[56.25vw] min-h-[100vh] min-w-[177.77vh]"
-          src={`https://www.youtube.com/embed/${data.videoId}?autoplay=1&mute=1&loop=1&playlist=${data.videoId}&controls=0&showinfo=0&modestbranding=1&rel=0&playsinline=1&enablejsapi=1${origin ? `&origin=${origin}` : ""}`}
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150vw] h-[84.37vw] min-h-[150vh] min-w-[266.66vh] md:w-[120vw] md:h-[67.5vw] md:min-h-[120vh] md:min-w-[213.33vh] pointer-events-none"
+          src={`https://www.youtube.com/embed/${data.videoId}?autoplay=1&mute=1&loop=1&playlist=${data.videoId}&controls=0&showinfo=0&modestbranding=1&rel=0&playsinline=1&enablejsapi=1&disablekb=1&fs=0&iv_load_policy=3${origin ? `&origin=${origin}` : ""}`}
           title="Background video"
           allow="autoplay; encrypted-media"
           allowFullScreen
