@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Icon from "./Icon";
 import AnimateOnScroll from "./AnimateOnScroll";
 
@@ -12,17 +12,22 @@ interface HeroProps {
     videoId: string;
     ctaPrimary: { text: string; href: string };
     ctaSecondary: { text: string; href: string };
-    stats: { value: string; label: string }[];
+
   };
 }
 
 export default function Hero({ data }: HeroProps) {
   const [videoLoaded, setVideoLoaded] = useState(false);
+  const [origin, setOrigin] = useState("");
 
   const handleClick = (href: string) => {
     const el = document.querySelector(href);
     if (el) el.scrollIntoView({ behavior: "smooth" });
   };
+
+  useEffect(() => {
+    setOrigin(window.location.origin);
+  }, []);
 
   return (
     <section
@@ -30,28 +35,29 @@ export default function Hero({ data }: HeroProps) {
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
       {/* Background Video */}
-      <div className="youtube-container">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {/* Poster/Fallback gradient */}
         <div
-          className="absolute inset-0 transition-opacity duration-1000"
+          className="absolute inset-0 transition-opacity duration-1000 z-[1]"
           style={{
             background: "var(--gradient-hero)",
             opacity: videoLoaded ? 0 : 1,
           }}
         />
         <iframe
-          src={`https://www.youtube.com/embed/${data.videoId}?autoplay=1&mute=1&loop=1&playlist=${data.videoId}&controls=0&showinfo=0&modestbranding=1&rel=0&playsinline=1&enablejsapi=1&origin=${typeof window !== "undefined" ? window.location.origin : ""}`}
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[100vw] h-[56.25vw] min-h-[100vh] min-w-[177.77vh]"
+          src={`https://www.youtube.com/embed/${data.videoId}?autoplay=1&mute=1&loop=1&playlist=${data.videoId}&controls=0&showinfo=0&modestbranding=1&rel=0&playsinline=1&enablejsapi=1${origin ? `&origin=${origin}` : ""}`}
           title="Background video"
           allow="autoplay; encrypted-media"
           allowFullScreen
           loading="lazy"
-          className="border-0"
+          style={{ border: "none" }}
           onLoad={() => setVideoLoaded(true)}
         />
       </div>
 
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80 z-[1]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/50 to-black/80 z-[1]" style={{ opacity: 0.65 }} />
 
       {/* Decorative elements */}
       <div className="absolute inset-0 z-[1] overflow-hidden pointer-events-none">
@@ -96,23 +102,6 @@ export default function Hero({ data }: HeroProps) {
             >
               {data.ctaSecondary.text}
             </button>
-          </div>
-        </AnimateOnScroll>
-
-        {/* Stats */}
-        <AnimateOnScroll animation="animate-fade-in-up" delay={600}>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
-            {data.stats.map((stat, i) => (
-              <div
-                key={i}
-                className="text-center p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm"
-              >
-                <div className="text-2xl sm:text-3xl font-bold text-white mb-1">
-                  {stat.value}
-                </div>
-                <div className="text-xs sm:text-sm text-white/60">{stat.label}</div>
-              </div>
-            ))}
           </div>
         </AnimateOnScroll>
       </div>

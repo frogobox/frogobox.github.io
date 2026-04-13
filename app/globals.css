@@ -292,20 +292,4 @@ body {
   box-shadow: 0 12px 30px var(--shadow-hover);
 }
 
-/* ===== YOUTUBE EMBED ===== */
-.youtube-container {
-  position: absolute;
-  inset: 0;
-  overflow: hidden;
-}
-.youtube-container iframe {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100vw;
-  height: 100vh;
-  min-width: 177.78vh; /* 16:9 ratio */
-  min-height: 56.25vw;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-}
+
