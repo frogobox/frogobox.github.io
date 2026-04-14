@@ -1,0 +1,294 @@
+Act as a senior frontend engineer and UI/UX designer.
+
+Build a high-converting, modern, and professional company profile website for an IT consulting business.
+
+---
+
+# 🎯 PROJECT OVERVIEW
+
+Website Name: Frogobox Media Id
+Tagline: We Build Scalable Digital Solutions Beyond The Box
+
+Business Type: IT Consultant / Software Development Services
+
+Goal:
+
+* Generate leads (consultation requests)
+* Build trust and credibility
+* Showcase services and portfolio
+* Optimize conversion rate
+
+---
+
+# 🧱 TECH STACK
+
+* Framework: Next.js (App Router)
+* Styling: Tailwind CSS
+* State/Data: Static JSON-based CMS (file-based)
+* Deployment-ready
+* SEO optimized
+* Fast loading (Lighthouse optimized)
+* Mobile-first responsive design
+
+---
+
+# 📁 PROJECT STRUCTURE
+
+Use clean and scalable architecture:
+
+/app
+layout.tsx
+page.tsx
+
+/components
+Navbar.tsx
+Hero.tsx
+Services.tsx
+WhyUs.tsx
+Portfolio.tsx
+Testimonials.tsx
+CTA.tsx
+ContactForm.tsx
+Footer.tsx
+ThemeToggle.tsx
+
+/data
+site.json
+
+/lib
+getData.ts
+
+/public
+
+---
+
+# 🧠 CMS (JSON-BASED)
+
+Use a file-based CMS system.
+
+File: /data/site.json
+
+* All content must come from JSON
+* Editing JSON = updating content (simulate CMS)
+* Clean structure and easy to scale
+
+Include dummy data:
+
+* hero (title, tagline, videoUrl)
+* services (title, description, icon optional)
+* whyUs (points)
+* portfolio (title, image, description)
+* testimonials (name, role, message)
+* CTA (title, subtitle, button)
+* contact (email, phone, etc)
+
+---
+
+# 🎨 DESIGN SYSTEM
+
+Style:
+
+* Modern, clean, professional
+* IT consultant vibe (trustworthy, technical)
+* Soft shadows
+* Rounded corners (rounded-xl / 2xl)
+* Good spacing and visual hierarchy
+
+Color:
+
+* Primary: Blue / Indigo
+* Neutral: Gray scale
+* Accent: subtle gradient allowed
+
+Typography:
+
+* Bold headings
+* Clear readable body text
+
+---
+
+# 🌙 DARK MODE
+
+* Implement dark & light mode toggle
+* Save preference in localStorage
+* Use Tailwind dark mode class strategy
+
+---
+
+# 📱 RESPONSIVENESS
+
+* Mobile-first approach
+* Fully responsive on all devices
+* Grid layout for desktop
+* Stack layout for mobile
+
+---
+
+# ⚡ PERFORMANCE
+
+* Lazy load images and video
+* Optimize YouTube embed
+* Use next/image
+* Avoid unnecessary re-renders
+
+---
+
+# 🔍 SEO OPTIMIZATION
+
+* Use proper meta tags
+* Dynamic title & description from JSON
+* Semantic HTML
+* Accessible structure
+
+---
+
+# 🧩 SECTIONS DETAIL
+
+## 1. HERO SECTION
+
+* Fullscreen section
+* Background: YouTube video (from JSON)
+* Overlay dark gradient
+* Title (big, bold)
+* Tagline
+* CTA buttons:
+
+  * "Get Free Consultation"
+  * "View Portfolio"
+
+---
+
+## 2. SERVICES
+
+* Grid layout (3 columns desktop)
+* Each card:
+
+  * Icon
+  * Title
+  * Short benefit-based description
+* Hover animation (lift + shadow)
+
+---
+
+## 3. WHY CHOOSE US
+
+* 3–4 strong value points
+* Use icons + short explanation
+* Focus on trust:
+
+  * scalability
+  * experience
+  * security
+  * long-term partnership
+
+---
+
+## 4. PORTFOLIO / CASE STUDIES
+
+* Card-based layout
+* Each item:
+
+  * Image
+  * Title
+  * Short description
+* Optional: problem → solution → result
+
+---
+
+## 5. TESTIMONIALS
+
+* Slider or grid
+* Client name, role, quote
+* Clean card UI
+
+---
+
+## 6. CTA SECTION (IMPORTANT)
+
+* Highlight section
+* Strong message:
+  "Let’s Build Something Great Together"
+* Button: "Book Free Consultation"
+
+---
+
+## 7. CONTACT FORM
+
+* Fields:
+
+  * Name
+  * Email
+  * Message
+* CTA: "Get Proposal"
+* UI only (no backend required)
+
+---
+
+## 8. FOOTER
+
+* Company info
+* Navigation links
+* Social links
+* Copyright
+
+---
+
+# 🔁 REUSABILITY
+
+* Build reusable components
+* Use props and mapping from JSON
+* Avoid hardcoded content
+
+---
+
+# ✨ ANIMATIONS
+
+* Subtle animations:
+
+  * fade-in
+  * hover effects
+* Use Tailwind + optional Framer Motion
+
+---
+
+# 📦 OUTPUT REQUIREMENTS
+
+Generate:
+
+1. Full Next.js project code
+2. All components implemented
+3. JSON CMS with dummy content
+4. Clean and readable code
+5. Ready to run locally
+6. Include instructions to run:
+
+   * npm install
+   * npm run dev
+
+---
+
+# 🚀 UX STRATEGY (IMPORTANT)
+
+Apply high-conversion UX principles:
+
+* Clear value proposition above the fold
+* Strong CTA placement
+* Use "problem → solution → proof → CTA"
+* Avoid generic company wording
+* Focus on client benefits
+
+---
+
+# ❗ IMPORTANT NOTES
+
+* Do NOT hardcode content → use JSON
+* Keep UI consistent
+* Ensure professional feel
+* Avoid clutter
+* Prioritize readability and trust
+
+---
+
+Manfaat logo yang ada di old-web\images
+
+Now generate the full project based on this specification.

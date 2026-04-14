@@ -1,0 +1,231 @@
+{
+  "site": {
+    "name": "Frogobox Media Id",
+    "tagline": "We Build Scalable Digital Solutions Beyond The Box",
+    "description": "Frogobox Media Id is a leading IT consulting and software development company. We deliver scalable, secure, and innovative digital solutions that drive real business growth.",
+    "url": "https://frogobox.github.io",
+    "logo": {
+      "color": "/logo-color.png",
+      "white": "/logo-white.png",
+      "black": "/logo-black.png"
+    }
+  },
+  "hero": {
+    "title": "We Build Scalable Digital Solutions",
+    "highlight": "Beyond The Box",
+    "tagline": "From concept to deployment — we engineer robust software solutions that transform businesses and accelerate growth.",
+    "videoUrl": "https://www.youtube.com/embed/68qCWu81CCA",
+    "videoId": "68qCWu81CCA",
+    "ctaPrimary": {
+      "text": "Get Free Consultation",
+      "href": "https://wa.me/6281357108568"
+    },
+    "ctaSecondary": {
+      "text": "View Portfolio",
+      "href": "#portfolio"
+    },
+    "stats": [
+      {
+        "value": "50+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "30+",
+        "label": "Happy Clients"
+      },
+      {
+        "value": "5+",
+        "label": "Years Experience"
+      },
+      {
+        "value": "99%",
+        "label": "Client Satisfaction"
+      }
+    ]
+  },
+  "services": {
+    "sectionTitle": "Our Services",
+    "sectionSubtitle": "End-to-end digital solutions tailored to your business needs",
+    "items": [
+      {
+        "icon": "code",
+        "title": "Custom Software Development",
+        "description": "Tailor-made software solutions designed to fit your unique business processes. From web apps to enterprise systems, we build it right."
+      },
+      {
+        "icon": "mobile",
+        "title": "Mobile App Development",
+        "description": "Native and cross-platform mobile applications that deliver exceptional user experiences on iOS and Android."
+      },
+      {
+        "icon": "cloud",
+        "title": "Cloud & DevOps",
+        "description": "Modernize your infrastructure with cloud-native architectures, CI/CD pipelines, and scalable deployment strategies."
+      },
+      {
+        "icon": "shield",
+        "title": "Cybersecurity Consulting",
+        "description": "Protect your digital assets with comprehensive security audits, penetration testing, and compliance frameworks."
+      },
+      {
+        "icon": "chart",
+        "title": "Data & Analytics",
+        "description": "Transform raw data into actionable insights with custom dashboards, BI solutions, and machine learning models."
+      },
+      {
+        "icon": "puzzle",
+        "title": "IT Strategy & Consulting",
+        "description": "Align your technology roadmap with business goals. We guide digital transformation from planning to execution."
+      }
+    ]
+  },
+  "whyUs": {
+    "sectionTitle": "Why Choose Frogobox?",
+    "sectionSubtitle": "We don't just build software — we build partnerships",
+    "items": [
+      {
+        "icon": "rocket",
+        "title": "Scalable Architecture",
+        "description": "Every solution we build is designed to grow with your business. From startup MVP to enterprise-grade systems."
+      },
+      {
+        "icon": "users",
+        "title": "Experienced Team",
+        "description": "Our engineers bring 5+ years of industry experience across fintech, healthcare, e-commerce, and more."
+      },
+      {
+        "icon": "lock",
+        "title": "Security First",
+        "description": "We implement industry-standard security practices from day one. Your data and your users are always protected."
+      },
+      {
+        "icon": "handshake",
+        "title": "Long-Term Partnership",
+        "description": "We're not just vendors — we're your technology partners. Ongoing support, maintenance, and strategic guidance."
+      }
+    ]
+  },
+  "portfolio": {
+    "sectionTitle": "Our Portfolio",
+    "sectionSubtitle": "Real solutions delivering real results for our clients",
+    "items": [
+      {
+        "image": "/portfolio-fintech.png",
+        "title": "FinPay — Digital Banking Platform",
+        "category": "Fintech",
+        "description": "A comprehensive mobile banking solution with real-time transactions, card management, and AI-powered spending insights. Serving 50K+ active users.",
+        "problem": "Legacy banking systems couldn't support modern digital experiences.",
+        "solution": "Built a cloud-native microservices platform with real-time processing.",
+        "result": "3x increase in digital transactions, 40% reduction in operational costs."
+      },
+      {
+        "image": "/portfolio-ecommerce.png",
+        "title": "ShopFlow — E-Commerce Analytics",
+        "category": "E-Commerce",
+        "description": "An intelligent e-commerce analytics dashboard providing real-time sales tracking, inventory management, and predictive demand forecasting.",
+        "problem": "Merchants lacked visibility into cross-channel sales performance.",
+        "solution": "Developed a unified analytics platform with ML-driven predictions.",
+        "result": "25% improvement in inventory efficiency, 2x faster decision-making."
+      },
+      {
+        "image": "/portfolio-healthcare.png",
+        "title": "MedConnect — Patient Management",
+        "category": "Healthcare",
+        "description": "A HIPAA-compliant patient management system with appointment scheduling, electronic health records, and telemedicine integration.",
+        "problem": "Clinics struggled with fragmented patient data across systems.",
+        "solution": "Created a unified platform connecting all touchpoints of patient care.",
+        "result": "60% reduction in administrative workload, improved patient outcomes."
+      }
+    ]
+  },
+  "testimonials": {
+    "sectionTitle": "What Our Clients Say",
+    "sectionSubtitle": "Trusted by businesses across Southeast Asia",
+    "items": [
+      {
+        "name": "Ahmad Ridwan",
+        "role": "CTO, FinPay Indonesia",
+        "message": "Frogobox transformed our legacy banking infrastructure into a modern, scalable platform. Their technical expertise and commitment to quality exceeded our expectations.",
+        "avatar": "AR"
+      },
+      {
+        "name": "Sarah Chen",
+        "role": "Founder, ShopFlow",
+        "message": "Working with Frogobox felt like having an in-house engineering team. They understood our vision from day one and delivered a product that our merchants absolutely love.",
+        "avatar": "SC"
+      },
+      {
+        "name": "Dr. Budi Santoso",
+        "role": "Director, MedConnect Health",
+        "message": "The patient management system Frogobox built has revolutionized how we operate. Our staff saves hours every day, and patient satisfaction has never been higher.",
+        "avatar": "BS"
+      },
+      {
+        "name": "Lisa Pratama",
+        "role": "VP Engineering, TechCorp",
+        "message": "Frogobox's DevOps consulting helped us achieve 99.9% uptime and cut our deployment time from days to minutes. A true game-changer for our engineering team.",
+        "avatar": "LP"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Let's Build Something Great Together",
+    "subtitle": "Ready to transform your business with cutting-edge technology? Let's start with a free consultation.",
+    "button": {
+      "text": "Book Free Consultation",
+      "href": "https://wa.me/6281357108568"
+    }
+  },
+  "contact": {
+    "sectionTitle": "Get In Touch",
+    "sectionSubtitle": "Tell us about your project — we'll get back to you within 24 hours",
+    "email": "frogoboxmedia@gmail.com",
+    "phone": "+62 8135 7108 568",
+    "address": "Probolinggo, East Java, Indonesia",
+    "formButton": "Send Proposal Request"
+  },
+  "footer": {
+    "description": "Building scalable digital solutions for forward-thinking businesses across Southeast Asia.",
+    "navigation": [
+      {
+        "label": "Services",
+        "href": "#services"
+      },
+      {
+        "label": "Portfolio",
+        "href": "#portfolio"
+      },
+      {
+        "label": "About",
+        "href": "#why-us"
+      },
+      {
+        "label": "Contact",
+        "href": "#contact"
+      }
+    ],
+    "social": [
+      {
+        "platform": "github",
+        "url": "https://github.com/frogobox",
+        "label": "GitHub"
+      },
+      {
+        "platform": "linkedin",
+        "url": "https://linkedin.com/company/frogobox",
+        "label": "LinkedIn"
+      },
+      {
+        "platform": "instagram",
+        "url": "https://instagram.com/frogobox",
+        "label": "Instagram"
+      },
+      {
+        "platform": "email",
+        "url": "mailto:frogoboxmedia@gmail.com",
+        "label": "Email"
+      }
+    ],
+    "copyright": "© 2026 Frogobox Media Id. All rights reserved."
+  }
+}
