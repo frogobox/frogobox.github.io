@@ -1,5 +1,8 @@
+"use client";
+
 import Icon from "./Icon";
 import AnimateOnScroll from "./AnimateOnScroll";
+import { useLanguage } from "@/lib/LanguageContext";
 
 interface WhyUsProps {
   data: {
@@ -14,13 +17,15 @@ interface WhyUsProps {
 }
 
 export default function WhyUs({ data }: WhyUsProps) {
+  const { t } = useLanguage();
+
   return (
     <section id="why-us" className="section-padding" style={{ background: "var(--bg-primary)" }}>
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <AnimateOnScroll className="text-center mb-16">
           <span className="inline-block px-4 py-1.5 rounded-full text-sm font-semibold bg-accent-500/10 text-accent-600 dark:text-accent-400 mb-4">
-            Why Frogobox
+            {t.ui.whyFrogobox}
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4" style={{ color: "var(--text-primary)" }}>
             {data.sectionTitle}

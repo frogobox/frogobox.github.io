@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "CMS Admin — Frogobox",
-  description: "Content Management System for Frogobox Media Id",
+  description: "Content Management System for Frogobox Media Indonesia",
   robots: { index: false, follow: false },
 };
 
