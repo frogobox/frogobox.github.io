@@ -3,8 +3,6 @@ import fs from "fs";
 import path from "path";
 import { execSync } from "child_process";
 
-const DATA_PATH = path.join(process.cwd(), "data", "site.json");
-
 function getCurrentBranch(): string {
   try {
     return execSync("git branch --show-current", { encoding: "utf-8" }).trim();
@@ -21,10 +19,13 @@ function isDevMode(): boolean {
   return isDev || isDevBranch;
 }
 
-function gitCommitAndPush(message: string): { success: boolean; error?: string } {
+function gitCommitAndPush(message: string, lang: string): { success: boolean; error?: string } {
   try {
     const cwd = process.cwd();
-    execSync("git add data/site.json", { cwd, encoding: "utf-8" });
+    execSync(`git add data/site-${lang}.json`, { cwd, encoding: "utf-8" });
+    if (lang === "en") {
+      execSync("git add data/site.json", { cwd, encoding: "utf-8" });
+    }
     execSync(`git commit -m "${message}"`, { cwd, encoding: "utf-8" });
     execSync("git push origin master", { cwd, encoding: "utf-8" });
     return { success: true };
@@ -33,9 +34,19 @@ function gitCommitAndPush(message: string): { success: boolean; error?: string }
   }
 }
 
-export async function GET() {
+export async function GET(request: Request) {
   try {
-    const raw = fs.readFileSync(DATA_PATH, "utf-8");
+    const { searchParams } = new URL(request.url);
+    const lang = searchParams.get("lang") || "en";
+    const dataPath = path.join(process.cwd(), "data", `site-${lang}.json`);
+    
+    let raw;
+    if (fs.existsSync(dataPath)) {
+      raw = fs.readFileSync(dataPath, "utf-8");
+    } else {
+      raw = fs.readFileSync(path.join(process.cwd(), "data", "site.json"), "utf-8");
+    }
+    
     const data = JSON.parse(raw);
     const branch = getCurrentBranch();
     const devMode = isDevMode();
@@ -47,6 +58,10 @@ export async function GET() {
 
 export async function PUT(request: Request) {
   try {
+    const { searchParams } = new URL(request.url);
+    const lang = searchParams.get("lang") || "en";
+    const dataPath = path.join(process.cwd(), "data", `site-${lang}.json`);
+
     const body = await request.json();
     const { data, commitMessage } = body;
 
@@ -54,16 +69,22 @@ export async function PUT(request: Request) {
       return NextResponse.json({ error: "No data provided" }, { status: 400 });
     }
 
-    // Write file
-    fs.writeFileSync(DATA_PATH, JSON.stringify(data, null, 2) + "\n", "utf-8");
+    // Write localized file
+    fs.writeFileSync(dataPath, JSON.stringify(data, null, 2) + "\n", "utf-8");
+
+    // For English, also write to default site.json for static metadata compat
+    if (lang === "en") {
+      const defaultPath = path.join(process.cwd(), "data", "site.json");
+      fs.writeFileSync(defaultPath, JSON.stringify(data, null, 2) + "\n", "utf-8");
+    }
 
     const devMode = isDevMode();
     let gitResult = null;
 
     // Only commit & push on production (master branch, not dev mode)
     if (!devMode) {
-      const msg = commitMessage || `chore: update site.json via CMS [${new Date().toISOString()}]`;
-      gitResult = gitCommitAndPush(msg);
+      const msg = commitMessage || `chore: update site-${lang}.json via CMS [${new Date().toISOString()}]`;
+      gitResult = gitCommitAndPush(msg, lang);
     }
 
     return NextResponse.json({

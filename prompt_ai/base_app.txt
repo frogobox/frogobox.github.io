@@ -6,7 +6,7 @@ Build a high-converting, modern, and professional company profile website for an
 
 # 🎯 PROJECT OVERVIEW
 
-Website Name: Frogobox Media Id
+Website Name: Frogobox Media Indonesia
 Tagline: We Build Scalable Digital Solutions Beyond The Box
 
 Business Type: IT Consultant / Software Development Services

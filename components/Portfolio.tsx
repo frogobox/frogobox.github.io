@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import AnimateOnScroll from "./AnimateOnScroll";
+import { useLanguage } from "@/lib/LanguageContext";
 
 interface PortfolioProps {
   data: {
@@ -22,6 +23,7 @@ interface PortfolioProps {
 
 export default function Portfolio({ data }: PortfolioProps) {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
+  const { t } = useLanguage();
 
   return (
     <section id="portfolio" className="section-padding" style={{ background: "var(--bg-secondary)" }}>
@@ -29,7 +31,7 @@ export default function Portfolio({ data }: PortfolioProps) {
         {/* Section Header */}
         <AnimateOnScroll className="text-center mb-16">
           <span className="inline-block px-4 py-1.5 rounded-full text-sm font-semibold bg-primary-100 text-primary-700 dark:bg-primary-950/40 dark:text-primary-400 mb-4">
-            Our Work
+            {t.ui.ourWork}
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4" style={{ color: "var(--text-primary)" }}>
             {data.sectionTitle}
@@ -77,7 +79,7 @@ export default function Portfolio({ data }: PortfolioProps) {
                     onClick={() => setExpandedIndex(expandedIndex === i ? null : i)}
                     className="text-sm font-semibold text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 transition-colors text-left"
                   >
-                    {expandedIndex === i ? "Show Less ↑" : "View Case Study →"}
+                    {expandedIndex === i ? t.ui.showLess : t.ui.viewCaseStudy}
                   </button>
 
                   <div
@@ -87,15 +89,15 @@ export default function Portfolio({ data }: PortfolioProps) {
                   >
                     <div className="space-y-3 text-sm pt-4 border-t" style={{ borderColor: "var(--border-color)" }}>
                       <div>
-                        <span className="font-semibold text-red-500">Problem: </span>
+                        <span className="font-semibold text-red-500">{t.ui.problem}: </span>
                         <span style={{ color: "var(--text-secondary)" }}>{item.problem}</span>
                       </div>
                       <div>
-                        <span className="font-semibold text-primary-500">Solution: </span>
+                        <span className="font-semibold text-primary-500">{t.ui.solution}: </span>
                         <span style={{ color: "var(--text-secondary)" }}>{item.solution}</span>
                       </div>
                       <div>
-                        <span className="font-semibold text-accent-500">Result: </span>
+                        <span className="font-semibold text-accent-500">{t.ui.result}: </span>
                         <span style={{ color: "var(--text-secondary)" }}>{item.result}</span>
                       </div>
                     </div>

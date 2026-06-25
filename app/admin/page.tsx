@@ -474,16 +474,17 @@ export default function AdminPage() {
   const [hasChanges, setHasChanges] = useState(false);
   const [originalData, setOriginalData] = useState<string>("");
   const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [selectedLang, setSelectedLang] = useState<"en" | "id">("en");
 
   const showToast = useCallback((message: string, type: "success" | "error" | "info" = "info") => {
     setToast({ message, type });
     setTimeout(() => setToast(null), 4000);
   }, []);
 
-  const fetchData = useCallback(async () => {
+  const fetchData = useCallback(async (lang: "en" | "id") => {
     setLoading(true);
     try {
-      const res = await fetch("/api/site");
+      const res = await fetch(`/api/site?lang=${lang}`);
       const json = await res.json();
       if (json.error) throw new Error(json.error);
       setData(json.data);
@@ -499,8 +500,8 @@ export default function AdminPage() {
   }, [showToast]);
 
   useEffect(() => {
-    fetchData();
-  }, [fetchData]);
+    fetchData(selectedLang);
+  }, [fetchData, selectedLang]);
 
   // Track changes
   useEffect(() => {
@@ -513,7 +514,7 @@ export default function AdminPage() {
     if (!data) return;
     setSaving(true);
     try {
-      const res = await fetch("/api/site", {
+      const res = await fetch(`/api/site?lang=${selectedLang}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ data, commitMessage: commitMessage || undefined }),
@@ -557,7 +558,7 @@ export default function AdminPage() {
     return (
       <div className="cms-loading">
         <p style={{ color: "#ef4444" }}>Failed to load data</p>
-        <button className="cms-btn-primary" onClick={fetchData}>
+        <button className="cms-btn-primary" onClick={() => fetchData(selectedLang)}>
           <IconRefresh /> Retry
         </button>
       </div>
@@ -670,6 +671,30 @@ export default function AdminPage() {
           </div>
         </div>
         <div className="cms-topbar-right">
+          <div className="cms-lang-selector" style={{ marginRight: "0.5rem" }}>
+            <select
+              value={selectedLang}
+              onChange={(e) => {
+                if (hasChanges && !window.confirm("You have unsaved changes. Discard them?")) {
+                  return;
+                }
+                setSelectedLang(e.target.value as "en" | "id");
+              }}
+              style={{
+                background: "#1f2937",
+                color: "#f9fafb",
+                border: "1px solid #374151",
+                borderRadius: "0.5rem",
+                padding: "0.25rem 0.5rem",
+                fontSize: "0.875rem",
+                outline: "none",
+                cursor: "pointer",
+              }}
+            >
+              <option value="en">English (US)</option>
+              <option value="id">Indonesia</option>
+            </select>
+          </div>
           <div className="cms-branch-badge">
             <span className={`cms-branch-dot ${devMode ? "cms-branch-dot-dev" : "cms-branch-dot-prod"}`} />
             <span className="cms-branch-text">{branch}</span>
@@ -728,7 +753,7 @@ export default function AdminPage() {
           )}
 
           <div className="cms-sidebar-footer">
-            <button className="cms-btn-ghost" onClick={fetchData}>
+            <button className="cms-btn-ghost" onClick={() => fetchData(selectedLang)}>
               <IconRefresh /> Reload Data
             </button>
           </div>

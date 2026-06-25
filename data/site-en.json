@@ -227,5 +227,36 @@
       }
     ],
     "copyright": "© 2026 Frogobox Media Indonesia. All rights reserved."
+  },
+  "ui": {
+    "navServices": "Services",
+    "navWhyUs": "Why Us",
+    "navPortfolio": "Portfolio",
+    "navTestimonials": "Testimonials",
+    "navContact": "Contact",
+    "quickLinks": "Quick Links",
+    "getStarted": "Get Started",
+    "whatWeDo": "What We Do",
+    "whyFrogobox": "Why Frogobox",
+    "ourWork": "Our Work",
+    "contactUs": "Contact Us",
+    "officeLocation": "Office Location",
+    "fullName": "Full Name",
+    "emailAddress": "Email Address",
+    "projectDetails": "Project Details",
+    "placeholderName": "John Doe",
+    "placeholderEmail": "john@company.com",
+    "placeholderMessage": "Tell us about your project, timeline, and budget...",
+    "messageSuccess": "✓ Message Sent Successfully!",
+    "showLess": "Show Less ↑",
+    "viewCaseStudy": "View Case Study →",
+    "problem": "Problem",
+    "solution": "Solution",
+    "result": "Result",
+    "stayUpdated": "Stay Updated",
+    "newsletterSubtitle": "Get the latest insights on tech and digital transformation.",
+    "placeholderNewsletter": "your@email.com",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service"
   }
 }

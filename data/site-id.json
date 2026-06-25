@@ -1,0 +1,262 @@
+{
+  "site": {
+    "name": "Frogobox Media Indonesia",
+    "tagline": "Kami Membangun Solusi Digital Skalabel Melampaui Batas",
+    "description": "Frogobox Media Indonesia adalah perusahaan konsultan IT dan pengembangan perangkat lunak terkemuka. Kami menghadirkan solusi digital yang inovatif, aman, dan skalabel yang mendorong pertumbuhan bisnis nyata.",
+    "url": "https://frogobox.github.io",
+    "logo": {
+      "color": "/logo-color.png",
+      "white": "/logo-white.png",
+      "black": "/logo-black.png"
+    }
+  },
+  "hero": {
+    "title": "Kami Membangun Solusi Digital Skalabel",
+    "highlight": "Melampaui Batas",
+    "tagline": "Dari konsep hingga deployment — kami merekayasa solusi perangkat lunak tangguh yang mentransformasi bisnis dan mempercepat pertumbuhan.",
+    "videoUrl": "https://www.youtube.com/embed/68qCWu81CCA",
+    "videoId": "68qCWu81CCA",
+    "ctaPrimary": {
+      "text": "Dapatkan Konsultasi Gratis",
+      "href": "https://wa.me/6281357108568"
+    },
+    "ctaSecondary": {
+      "text": "Lihat Portofolio",
+      "href": "#portfolio"
+    },
+    "stats": [
+      {
+        "value": "50+",
+        "label": "Proyek Selesai"
+      },
+      {
+        "value": "30+",
+        "label": "Klien Puas"
+      },
+      {
+        "value": "5+",
+        "label": "Tahun Pengalaman"
+      },
+      {
+        "value": "99%",
+        "label": "Kepuasan Klien"
+      }
+    ]
+  },
+  "services": {
+    "sectionTitle": "Layanan Kami",
+    "sectionSubtitle": "Solusi digital ujung-ke-ujung yang disesuaikan dengan kebutuhan bisnis Anda",
+    "items": [
+      {
+        "icon": "code",
+        "title": "Pengembangan Perangkat Lunak Kustom",
+        "description": "Solusi perangkat lunak khusus yang dirancang agar sesuai dengan proses bisnis unik Anda. Mulai dari aplikasi web hingga sistem perusahaan, kami membangunnya dengan tepat."
+      },
+      {
+        "icon": "mobile",
+        "title": "Pengembangan Aplikasi Seluler",
+        "description": "Aplikasi seluler native dan cross-platform yang menghadirkan pengalaman pengguna luar biasa di iOS dan Android."
+      },
+      {
+        "icon": "cloud",
+        "title": "Cloud & DevOps",
+        "description": "Modernisasikan infrastruktur Anda dengan arsitektur cloud-native, pipa CI/CD, dan strategi deployment yang skalabel."
+      },
+      {
+        "icon": "shield",
+        "title": "Konsultasi Keamanan Siber",
+        "description": "Lindungi aset digital Anda dengan audit keamanan komprehensif, pengujian penetrasi, dan kerangka kerja kepatuhan."
+      },
+      {
+        "icon": "chart",
+        "title": "Data & Analitik",
+        "description": "Ubah data mentah menjadi wawasan yang dapat ditindaklanjuti dengan dasbor kustom, solusi BI, dan model machine learning."
+      },
+      {
+        "icon": "puzzle",
+        "title": "Strategi & Konsultasi IT",
+        "description": "Selaraskan peta jalan teknologi Anda dengan tujuan bisnis. Kami memandu transformasi digital dari perencanaan hingga eksekusi."
+      }
+    ]
+  },
+  "whyUs": {
+    "sectionTitle": "Mengapa Memilih Frogobox?",
+    "sectionSubtitle": "Kami tidak hanya membangun perangkat lunak — kami membangun kemitraan",
+    "items": [
+      {
+        "icon": "rocket",
+        "title": "Arsitektur yang Skalabel",
+        "description": "Setiap solusi yang kami bangun dirancang untuk tumbuh bersama bisnis Anda. Dari MVP startup hingga sistem tingkat perusahaan."
+      },
+      {
+        "icon": "users",
+        "title": "Tim Berpengalaman",
+        "description": "Insinyur kami membawa 5+ tahun pengalaman industri di bidang fintech, kesehatan, e-commerce, dan banyak lagi."
+      },
+      {
+        "icon": "lock",
+        "title": "Mengutamakan Keamanan",
+        "description": "Kami menerapkan praktik keamanan standar industri sejak hari pertama. Data Anda dan pengguna Anda selalu terlindungi."
+      },
+      {
+        "icon": "handshake",
+        "title": "Kemitraan Jangka Panjang",
+        "description": "Kami bukan sekadar vendor — kami adalah mitra teknologi Anda. Dukungan berkelanjutan, pemeliharaan, dan panduan strategis."
+      }
+    ]
+  },
+  "portfolio": {
+    "sectionTitle": "Portofolio Kami",
+    "sectionSubtitle": "Solusi nyata yang memberikan hasil nyata bagi klien kami",
+    "items": [
+      {
+        "image": "/portfolio-fintech.png",
+        "title": "FinPay — Platform Perbankan Digital",
+        "category": "Fintech",
+        "description": "Solusi perbankan seluler komprehensif dengan transaksi real-time, manajemen kartu, dan wawasan pengeluaran bertenaga AI. Melayani 50 ribu+ pengguna aktif.",
+        "problem": "Sistem perbankan lama tidak dapat mendukung pengalaman digital modern.",
+        "solution": "Membangun platform microservices cloud-native dengan pemrosesan real-time.",
+        "result": "Peningkatan 3x dalam transaksi digital, pengurangan 40% dalam biaya operasional."
+      },
+      {
+        "image": "/portfolio-ecommerce.png",
+        "title": "ShopFlow — Analitik E-Commerce",
+        "category": "E-Commerce",
+        "description": "Dasbor analitik e-commerce pintar yang menyediakan pelacakan penjualan real-time, manajemen inventaris, dan prakiraan permintaan prediktif.",
+        "problem": "Pedagang kekurangan visibilitas ke kinerja penjualan lintas saluran.",
+        "solution": "Mengembangkan platform analitik terpadu dengan prediksi berbasis ML.",
+        "result": "Peningkatan 25% dalam efisiensi inventaris, pengambilan keputusan 2x lebih cepat."
+      },
+      {
+        "image": "/portfolio-healthcare.png",
+        "title": "MedConnect — Manajemen Pasien",
+        "category": "Healthcare",
+        "description": "Sistem manajemen pasien yang mematuhi standar HIPAA dengan penjadwalan janji temu, catatan kesehatan elektronik, dan integrasi telemedis.",
+        "problem": "Klinik kesulitan dengan data pasien yang terfragmentasi di berbagai sistem.",
+        "solution": "Menciptakan platform terpadu yang menghubungkan semua titik sentuh perawatan pasien.",
+        "result": "Pengurangan 60% dalam beban kerja administratif, hasil perawatan pasien yang lebih baik."
+      }
+    ]
+  },
+  "testimonials": {
+    "sectionTitle": "Apa Kata Klien Kami",
+    "sectionSubtitle": "Dipercaya oleh bisnis di seluruh Asia Tenggara",
+    "items": [
+      {
+        "name": "Ahmad Ridwan",
+        "role": "CTO, FinPay Indonesia",
+        "message": "Frogobox mentransformasi infrastruktur perbankan lama kami menjadi platform modern yang skalabel. Keahlian teknis dan komitmen mereka terhadap kualitas melebihi harapan kami.",
+        "avatar": "AR"
+      },
+      {
+        "name": "Sarah Chen",
+        "role": "Pendiri, ShopFlow",
+        "message": "Bekerja dengan Frogobox terasa seperti memiliki tim teknik internal sendiri. Mereka memahami visi kami sejak hari pertama dan memberikan produk yang sangat disukai oleh para pedagang kami.",
+        "avatar": "SC"
+      },
+      {
+        "name": "Dr. Budi Santoso",
+        "role": "Direktur, MedConnect Health",
+        "message": "Sistem manajemen pasien yang dibangun Frogobox telah merevolusi cara kami beroperasi. Staf kami menghemat waktu setiap hari, dan kepuasan pasien belum pernah setinggi ini.",
+        "avatar": "BS"
+      },
+      {
+        "name": "Lisa Pratama",
+        "role": "VP Engineering, TechCorp",
+        "message": "Konsultasi DevOps dari Frogobox membantu kami mencapai uptime 99,9% dan memangkas waktu deployment kami dari hitungan hari menjadi menit. Benar-benar pengubah permainan bagi tim teknik kami.",
+        "avatar": "LP"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Mari Bangun Sesuatu yang Hebat Bersama",
+    "subtitle": "Siap mentransformasi bisnis Anda dengan teknologi mutakhir? Mari mulai dengan konsultasi gratis.",
+    "button": {
+      "text": "Pesan Konsultasi Gratis",
+      "href": "https://wa.me/6281357108568"
+    }
+  },
+  "contact": {
+    "sectionTitle": "Hubungi Kami",
+    "sectionSubtitle": "Beri tahu kami tentang proyek Anda — kami akan menghubungi Anda kembali dalam waktu 24 jam",
+    "email": "frogoboxmedia@gmail.com",
+    "phone": "+62 8135 7108 568",
+    "address": "Probolinggo, Jawa Timur, Indonesia",
+    "formButton": "Kirim Permintaan Proposal"
+  },
+  "footer": {
+    "description": "Membangun solusi digital skalabel untuk bisnis yang berpikiran maju di seluruh Asia Tenggara.",
+    "navigation": [
+      {
+        "label": "Layanan",
+        "href": "#services"
+      },
+      {
+        "label": "Portofolio",
+        "href": "#portfolio"
+      },
+      {
+        "label": "Tentang Kami",
+        "href": "#why-us"
+      },
+      {
+        "label": "Kontak",
+        "href": "#contact"
+      }
+    ],
+    "social": [
+      {
+        "platform": "github",
+        "url": "https://github.com/frogobox",
+        "label": "GitHub"
+      },
+      {
+        "platform": "linkedin",
+        "url": "https://linkedin.com/company/frogobox",
+        "label": "LinkedIn"
+      },
+      {
+        "platform": "instagram",
+        "url": "https://instagram.com/frogobox",
+        "label": "Instagram"
+      },
+      {
+        "platform": "email",
+        "url": "mailto:frogoboxmedia@gmail.com",
+        "label": "Email"
+      }
+    ],
+    "copyright": "© 2026 Frogobox Media Indonesia. Hak cipta dilindungi undang-undang."
+  },
+  "ui": {
+    "navServices": "Layanan",
+    "navWhyUs": "Mengapa Kami",
+    "navPortfolio": "Portofolio",
+    "navTestimonials": "Testimoni",
+    "navContact": "Kontak",
+    "quickLinks": "Tautan",
+    "getStarted": "Mulai Sekarang",
+    "whatWeDo": "Layanan Kami",
+    "whyFrogobox": "Mengapa Frogobox",
+    "ourWork": "Karya Kami",
+    "contactUs": "Hubungi Kami",
+    "officeLocation": "Lokasi Kantor",
+    "fullName": "Nama Lengkap",
+    "emailAddress": "Alamat Email",
+    "projectDetails": "Detail Proyek",
+    "placeholderName": "John Doe",
+    "placeholderEmail": "john@perusahaan.com",
+    "placeholderMessage": "Ceritakan tentang proyek Anda, lini masa, dan anggaran...",
+    "messageSuccess": "✓ Pesan Berhasil Dikirim!",
+    "showLess": "Sembunyikan ↑",
+    "viewCaseStudy": "Lihat Studi Kasus →",
+    "problem": "Masalah",
+    "solution": "Solusi",
+    "result": "Hasil",
+    "stayUpdated": "Tetap Terinformasi",
+    "newsletterSubtitle": "Dapatkan wawasan terbaru tentang teknologi dan transformasi digital.",
+    "placeholderNewsletter": "email@anda.com",
+    "privacyPolicy": "Kebijakan Privasi",
+    "termsOfService": "Ketentuan Layanan"
+  }
+}

@@ -1,4 +1,4 @@
-import siteData from "@/data/site.json";
+import siteData from "@/data/site-en.json";
 
 export type SiteData = typeof siteData;
 

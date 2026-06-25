@@ -4,16 +4,18 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import ThemeToggle from "./ThemeToggle";
 import Icon from "./Icon";
-
-const navLinks = [
-  { label: "Services", href: "#services" },
-  { label: "Why Us", href: "#why-us" },
-  { label: "Portfolio", href: "#portfolio" },
-  { label: "Testimonials", href: "#testimonials" },
-  { label: "Contact", href: "#contact" },
-];
+import { useLanguage } from "@/lib/LanguageContext";
 
 export default function Navbar() {
+  const { language, setLanguage, t } = useLanguage();
+
+  const navLinks = [
+    { label: t.ui.navServices, href: "#services" },
+    { label: t.ui.navWhyUs, href: "#why-us" },
+    { label: t.ui.navPortfolio, href: "#portfolio" },
+    { label: t.ui.navTestimonials, href: "#testimonials" },
+    { label: t.ui.navContact, href: "#contact" },
+  ];
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("");
@@ -80,7 +82,7 @@ export default function Navbar() {
           <div className="relative w-10 h-10 transition-transform duration-300 group-hover:scale-110">
             <Image
               src="/logo-color.png"
-              alt="Frogobox Media Id"
+              alt="Frogobox Media Indonesia"
               fill
               sizes="40px"
               className="object-contain"
@@ -117,6 +119,19 @@ export default function Navbar() {
         <div className="flex items-center gap-3">
           <ThemeToggle />
           <button
+            onClick={() => setLanguage(language === "en" ? "id" : "en")}
+            className={`flex items-center gap-1 px-3 py-1.5 rounded-xl text-xs font-bold border transition-all duration-300 ${
+              scrolled
+                ? "text-[var(--text-primary)] border-[var(--border-color)] hover:bg-[var(--bg-secondary)]"
+                : "text-white border-white/20 hover:bg-white/10"
+            }`}
+            aria-label="Toggle language"
+          >
+            <span className={language === "en" ? "text-primary-500" : ""}>EN</span>
+            <span className="opacity-40">|</span>
+            <span className={language === "id" ? "text-primary-500" : ""}>ID</span>
+          </button>
+          <button
             onClick={() => handleNavClick("#contact")}
             className={`hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-300 ${
               scrolled
@@ -125,7 +140,7 @@ export default function Navbar() {
             }`}
           >
             <Icon name="sparkles" className="w-4 h-4" />
-            Get Started
+            {t.ui.getStarted}
           </button>
           {/* Mobile Menu Button */}
           <button
@@ -168,8 +183,23 @@ export default function Navbar() {
             className="w-full btn-primary text-sm mt-2"
           >
             <Icon name="sparkles" className="w-4 h-4" />
-            Get Started
+            {t.ui.getStarted}
           </button>
+          <div className="flex justify-between items-center px-4 py-2.5 border-t mt-3" style={{ borderColor: "var(--border-color)" }}>
+            <span className="text-xs font-semibold" style={{ color: "var(--text-secondary)" }}>Language / Bahasa</span>
+            <button
+              onClick={() => setLanguage(language === "en" ? "id" : "en")}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold bg-[var(--bg-secondary)] border"
+              style={{
+                color: "var(--text-primary)",
+                borderColor: "var(--border-color)"
+              }}
+            >
+              <span className={language === "en" ? "text-primary-500" : ""}>EN</span>
+              <span className="opacity-40">|</span>
+              <span className={language === "id" ? "text-primary-500" : ""}>ID</span>
+            </button>
+          </div>
         </div>
       </div>
     </header>

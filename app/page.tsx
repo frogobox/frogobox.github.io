@@ -1,4 +1,6 @@
-import { getSiteData } from "@/lib/getData";
+"use client";
+
+import { LanguageProvider, useLanguage } from "@/lib/LanguageContext";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
@@ -9,22 +11,30 @@ import CTA from "@/components/CTA";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 
-export default function HomePage() {
-  const data = getSiteData();
+function HomeContent() {
+  const { t } = useLanguage();
 
   return (
     <>
       <Navbar />
       <main>
-        <Hero data={data.hero} />
-        <Services data={data.services} />
-        <WhyUs data={data.whyUs} />
-        <Portfolio data={data.portfolio} />
-        <Testimonials data={data.testimonials} />
-        <CTA data={data.cta} />
-        <ContactForm data={data.contact} />
+        <Hero data={t.hero} />
+        <Services data={t.services} />
+        <WhyUs data={t.whyUs} />
+        <Portfolio data={t.portfolio} />
+        <Testimonials data={t.testimonials} />
+        <CTA data={t.cta} />
+        <ContactForm data={t.contact} />
       </main>
-      <Footer data={data.footer} siteName={data.site.name} />
+      <Footer data={t.footer} siteName={t.site.name} />
     </>
+  );
+}
+
+export default function HomePage() {
+  return (
+    <LanguageProvider>
+      <HomeContent />
+    </LanguageProvider>
   );
 }
