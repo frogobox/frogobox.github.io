@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Icon from "./Icon";
 import AnimateOnScroll from "./AnimateOnScroll";
+import { useLanguage } from "@/lib/LanguageContext";
 
 interface ContactFormProps {
   data: {
@@ -18,6 +19,7 @@ interface ContactFormProps {
 export default function ContactForm({ data }: ContactFormProps) {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [submitted, setSubmitted] = useState(false);
+  const { language, t } = useLanguage();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -29,8 +31,8 @@ export default function ContactForm({ data }: ContactFormProps) {
 
   const contactInfo = [
     { icon: "email", label: "Email", value: data.email, href: `mailto:${data.email}` },
-    { icon: "phone", label: "Phone", value: data.phone, href: `tel:${data.phone.replace(/\s/g, "")}` },
-    { icon: "location", label: "Address", value: data.address, href: "#" },
+    { icon: "phone", label: language === "en" ? "Phone" : "Telepon", value: data.phone, href: `tel:${data.phone.replace(/\s/g, "")}` },
+    { icon: "location", label: language === "en" ? "Address" : "Alamat", value: data.address, href: "#" },
   ];
 
   return (
@@ -39,7 +41,7 @@ export default function ContactForm({ data }: ContactFormProps) {
         {/* Section Header */}
         <AnimateOnScroll className="text-center mb-16">
           <span className="inline-block px-4 py-1.5 rounded-full text-sm font-semibold bg-primary-100 text-primary-700 dark:bg-primary-950/40 dark:text-primary-400 mb-4">
-            Contact Us
+            {t.ui.contactUs}
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4" style={{ color: "var(--text-primary)" }}>
             {data.sectionTitle}
@@ -84,7 +86,7 @@ export default function ContactForm({ data }: ContactFormProps) {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Office Location"
+                title={t.ui.officeLocation}
               />
             </div>
           </AnimateOnScroll>
@@ -96,7 +98,7 @@ export default function ContactForm({ data }: ContactFormProps) {
                 {/* Name */}
                 <div>
                   <label htmlFor="contact-name" className="block text-sm font-semibold mb-2" style={{ color: "var(--text-primary)" }}>
-                    Full Name
+                    {t.ui.fullName}
                   </label>
                   <input
                     id="contact-name"
@@ -104,7 +106,7 @@ export default function ContactForm({ data }: ContactFormProps) {
                     required
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    placeholder="John Doe"
+                    placeholder={t.ui.placeholderName}
                     className="w-full px-4 py-3.5 rounded-xl text-sm transition-all duration-300 outline-none focus:ring-2 focus:ring-primary-500/50"
                     style={{
                       background: "var(--bg-secondary)",
@@ -117,7 +119,7 @@ export default function ContactForm({ data }: ContactFormProps) {
                 {/* Email */}
                 <div>
                   <label htmlFor="contact-email" className="block text-sm font-semibold mb-2" style={{ color: "var(--text-primary)" }}>
-                    Email Address
+                    {t.ui.emailAddress}
                   </label>
                   <input
                     id="contact-email"
@@ -125,7 +127,7 @@ export default function ContactForm({ data }: ContactFormProps) {
                     required
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    placeholder="john@company.com"
+                    placeholder={t.ui.placeholderEmail}
                     className="w-full px-4 py-3.5 rounded-xl text-sm transition-all duration-300 outline-none focus:ring-2 focus:ring-primary-500/50"
                     style={{
                       background: "var(--bg-secondary)",
@@ -138,7 +140,7 @@ export default function ContactForm({ data }: ContactFormProps) {
                 {/* Message */}
                 <div>
                   <label htmlFor="contact-message" className="block text-sm font-semibold mb-2" style={{ color: "var(--text-primary)" }}>
-                    Project Details
+                    {t.ui.projectDetails}
                   </label>
                   <textarea
                     id="contact-message"
@@ -146,7 +148,7 @@ export default function ContactForm({ data }: ContactFormProps) {
                     rows={5}
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    placeholder="Tell us about your project, timeline, and budget..."
+                    placeholder={t.ui.placeholderMessage}
                     className="w-full px-4 py-3.5 rounded-xl text-sm transition-all duration-300 outline-none focus:ring-2 focus:ring-primary-500/50 resize-none"
                     style={{
                       background: "var(--bg-secondary)",
@@ -164,7 +166,7 @@ export default function ContactForm({ data }: ContactFormProps) {
                 >
                   {submitted ? (
                     <span className="flex items-center gap-2">
-                      ✓ Message Sent Successfully!
+                      {t.ui.messageSuccess}
                     </span>
                   ) : (
                     <span className="flex items-center gap-2">

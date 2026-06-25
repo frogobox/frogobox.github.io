@@ -51,6 +51,11 @@ export const metadata: Metadata = {
     statusBarStyle: "default",
     title: site.name,
   },
+  icons: {
+    icon: "/logo-color.png",
+    shortcut: "/logo-color.png",
+    apple: "/logo-color.png",
+  },
   formatDetection: {
     telephone: false,
   },

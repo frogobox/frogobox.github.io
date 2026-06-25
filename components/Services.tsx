@@ -1,5 +1,8 @@
+"use client";
+
 import Icon from "./Icon";
 import AnimateOnScroll from "./AnimateOnScroll";
+import { useLanguage } from "@/lib/LanguageContext";
 
 interface ServicesProps {
   data: {
@@ -14,13 +17,15 @@ interface ServicesProps {
 }
 
 export default function Services({ data }: ServicesProps) {
+  const { t } = useLanguage();
+
   return (
     <section id="services" className="section-padding" style={{ background: "var(--bg-secondary)" }}>
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <AnimateOnScroll className="text-center mb-16">
           <span className="inline-block px-4 py-1.5 rounded-full text-sm font-semibold bg-primary-100 text-primary-700 dark:bg-primary-950/40 dark:text-primary-400 mb-4">
-            What We Do
+            {t.ui.whatWeDo}
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4" style={{ color: "var(--text-primary)" }}>
             {data.sectionTitle}

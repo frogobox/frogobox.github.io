@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Icon from "./Icon";
+import { useLanguage } from "@/lib/LanguageContext";
 
 interface FooterProps {
   data: {
@@ -12,6 +15,7 @@ interface FooterProps {
 }
 
 export default function Footer({ data, siteName }: FooterProps) {
+  const { t } = useLanguage();
   return (
     <footer
       className="relative pt-16 pb-8 overflow-hidden"
@@ -66,7 +70,7 @@ export default function Footer({ data, siteName }: FooterProps) {
           {/* Navigation */}
           <div>
             <h4 className="font-bold text-sm uppercase tracking-wider mb-6" style={{ color: "var(--text-tertiary)" }}>
-              Quick Links
+              {t.ui.quickLinks}
             </h4>
             <ul className="space-y-3">
               {data.navigation.map((link, i) => (
@@ -86,15 +90,15 @@ export default function Footer({ data, siteName }: FooterProps) {
           {/* Newsletter / Extra */}
           <div>
             <h4 className="font-bold text-sm uppercase tracking-wider mb-6" style={{ color: "var(--text-tertiary)" }}>
-              Stay Updated
+              {t.ui.stayUpdated}
             </h4>
             <p className="text-sm mb-4" style={{ color: "var(--text-secondary)" }}>
-              Get the latest insights on tech and digital transformation.
+              {t.ui.newsletterSubtitle}
             </p>
             <div className="flex gap-2">
               <input
                 type="email"
-                placeholder="your@email.com"
+                placeholder={t.ui.placeholderNewsletter}
                 className="flex-1 px-4 py-2.5 rounded-xl text-sm outline-none focus:ring-2 focus:ring-primary-500/50"
                 style={{
                   background: "var(--bg-secondary)",
@@ -118,8 +122,8 @@ export default function Footer({ data, siteName }: FooterProps) {
             {data.copyright}
           </p>
           <div className="flex gap-6 text-sm" style={{ color: "var(--text-tertiary)" }}>
-            <a href="#" className="hover:text-primary-500 transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-primary-500 transition-colors">Terms of Service</a>
+            <a href="#" className="hover:text-primary-500 transition-colors">{t.ui.privacyPolicy}</a>
+            <a href="#" className="hover:text-primary-500 transition-colors">{t.ui.termsOfService}</a>
           </div>
         </div>
       </div>
