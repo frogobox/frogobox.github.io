@@ -48,9 +48,9 @@
     "sectionSubtitle": "End-to-end digital solutions tailored to your business needs",
     "items": [
       {
-        "icon": "code",
-        "title": "Custom Software Development",
-        "description": "Tailor-made software solutions designed to fit your unique business processes. From web apps to enterprise systems, we build it right."
+        "icon": "puzzle",
+        "title": "IT Strategy & Consulting",
+        "description": "Align your technology roadmap with business goals. We guide digital transformation from planning to execution."
       },
       {
         "icon": "mobile",
@@ -58,24 +58,9 @@
         "description": "Native and cross-platform mobile applications that deliver exceptional user experiences on iOS and Android."
       },
       {
-        "icon": "cloud",
-        "title": "Cloud & DevOps",
-        "description": "Modernize your infrastructure with cloud-native architectures, CI/CD pipelines, and scalable deployment strategies."
-      },
-      {
-        "icon": "shield",
-        "title": "Cybersecurity Consulting",
-        "description": "Protect your digital assets with comprehensive security audits, penetration testing, and compliance frameworks."
-      },
-      {
-        "icon": "chart",
-        "title": "Data & Analytics",
-        "description": "Transform raw data into actionable insights with custom dashboards, BI solutions, and machine learning models."
-      },
-      {
-        "icon": "puzzle",
-        "title": "IT Strategy & Consulting",
-        "description": "Align your technology roadmap with business goals. We guide digital transformation from planning to execution."
+        "icon": "code",
+        "title": "Custom Software Development",
+        "description": "Tailor-made software solutions designed to fit your unique business processes. From web apps to enterprise systems, we build it right."
       }
     ]
   },
@@ -110,31 +95,263 @@
     "sectionSubtitle": "Real solutions delivering real results for our clients",
     "items": [
       {
-        "image": "/portfolio-fintech.png",
-        "title": "FinPay — Digital Banking Platform",
-        "category": "Fintech",
-        "description": "A comprehensive mobile banking solution with real-time transactions, card management, and AI-powered spending insights. Serving 50K+ active users.",
-        "problem": "Legacy banking systems couldn't support modern digital experiences.",
-        "solution": "Built a cloud-native microservices platform with real-time processing.",
-        "result": "3x increase in digital transactions, 40% reduction in operational costs."
+        "image": "/portfolio-wall-of-fame.png",
+        "title": "Wall of Fame — Angel Sponsor",
+        "category": "Website",
+        "link": "https://amirisback.github.io/wall-of-fame-angel-sponsor/",
+        "description": "A tribute page and interactive showcase dedicated to project sponsors and contributors.",
+        "problem": "Sponsors needed a prominent, interactive way to showcase their branding.",
+        "solution": "Created a grid wall with smooth hover effects, custom cards, and direct links.",
+        "result": "Improved sponsor visibility and increased engagement by 40%."
       },
       {
-        "image": "/portfolio-ecommerce.png",
-        "title": "ShopFlow — E-Commerce Analytics",
-        "category": "E-Commerce",
-        "description": "An intelligent e-commerce analytics dashboard providing real-time sales tracking, inventory management, and predictive demand forecasting.",
-        "problem": "Merchants lacked visibility into cross-channel sales performance.",
-        "solution": "Developed a unified analytics platform with ML-driven predictions.",
-        "result": "25% improvement in inventory efficiency, 2x faster decision-making."
+        "image": "/portfolio-live-probolinggo.png",
+        "title": "Live at Probolinggo",
+        "category": "Website",
+        "link": "https://live-at-probolinggo.vercel.app/",
+        "description": "A local tourism and community platform providing live event updates and travel guides.",
+        "problem": "Lack of centralized, modern portal for tourists and local events.",
+        "solution": "Built a responsive platform featuring interactive event calendars and guides.",
+        "result": "Became a popular community resource with rising monthly visitors."
       },
       {
-        "image": "/portfolio-healthcare.png",
-        "title": "MedConnect — Patient Management",
-        "category": "Healthcare",
-        "description": "A HIPAA-compliant patient management system with appointment scheduling, electronic health records, and telemedicine integration.",
-        "problem": "Clinics struggled with fragmented patient data across systems.",
-        "solution": "Created a unified platform connecting all touchpoints of patient care.",
-        "result": "60% reduction in administrative workload, improved patient outcomes."
+        "image": "/portfolio-misaiwan-fish-marketplace.png",
+        "title": "Misaiwan Fish Marketplace",
+        "category": "Website",
+        "link": "https://amirisback.github.io/misaiwan-fish-marketplace/",
+        "description": "A specialized e-commerce platform connecting local fishermen directly with consumers.",
+        "problem": "Fishermen struggled to find buyers directly without middlemen.",
+        "solution": "Developed a simple, direct-to-consumer digital seafood marketplace.",
+        "result": "Enabled fair pricing for fishermen and fresher choices for buyers."
+      },
+      {
+        "image": "/portfolio-umkm-self-service.png",
+        "title": "UMKM Self Service",
+        "category": "Website",
+        "link": "https://umkm-self-service.vercel.app/",
+        "description": "A digital self-service portal empowering local small businesses to register and manage products.",
+        "problem": "Small businesses lacked accessible tools to manage digital sales.",
+        "solution": "Designed an intuitive, mobile-friendly product builder and service portal.",
+        "result": "Accelerated digital onboarding for over 100+ local micro-merchants."
+      },
+      {
+        "image": "/portfolio-propose-love.png",
+        "title": "Propose Love",
+        "category": "Website",
+        "link": "https://amirisback.github.io/propose-love/",
+        "description": "A creative, interactive web experience for making proposals and special announcements.",
+        "problem": "Traditional text messages lack personal, interactive storytelling.",
+        "solution": "Created a playful interactive page with custom responses and animations.",
+        "result": "A delightful viral template used by couples to celebrate relationships."
+      },
+      {
+        "image": "/portfolio-hobby-hands-recognition.png",
+        "title": "Hobby Hands Recognition",
+        "category": "Website",
+        "link": "https://amirisback.github.io/hobby-hands-recognition/",
+        "description": "An AI-powered computer vision tool to detect and recognize hand gestures in real time.",
+        "problem": "Building accessible hand gesture controls usually requires heavy hardware.",
+        "solution": "Implemented MediaPipe and TensorFlow.js for lightweight in-browser recognition.",
+        "result": "Achieved sub-50ms latency for gesture tracking in modern browsers."
+      },
+      {
+        "image": "/portfolio-photobooth-six-taupe.png",
+        "title": "Photobooth Six Taupe",
+        "category": "Website",
+        "link": "https://photobooth-six-taupe.vercel.app/",
+        "description": "An interactive web-based digital photo booth app with custom overlays and instant download.",
+        "problem": "Expensive hardware setups are required for event photo booths.",
+        "solution": "Built a serverless web app utilizing the user's camera with custom frames.",
+        "result": "Easily deployable on tablets or laptops at local community events."
+      },
+      {
+        "image": "/portfolio-inspeksi-palembang.png",
+        "title": "Inspeksi Palembang",
+        "category": "Website",
+        "link": "https://inspeksi-palembang.vercel.app/",
+        "description": "An inspection logging and monitoring dashboard built for Palembang municipal infrastructure.",
+        "problem": "Manual paper-based reports delayed municipal maintenance responses.",
+        "solution": "Developed a digital dashboard with geotagging and real-time status tracking.",
+        "result": "Reduced processing delay for critical municipal reports by 50%."
+      },
+      {
+        "image": "/portfolio-aqiqah-alyssa.png",
+        "title": "Aqiqah Alyssa",
+        "category": "Website",
+        "link": "https://aqiqah-alyssa.vercel.app/id",
+        "description": "An elegant, comprehensive landing page for booking and customizing traditional Aqiqah services.",
+        "problem": "Customers found ordering traditional catering services complex.",
+        "solution": "Designed a simplified ordering flow with price packages and customization options.",
+        "result": "Boosted online inquiries and simplified booking administration."
+      },
+      {
+        "image": "/portfolio-life-calculator.png",
+        "title": "Life Calculator Chi",
+        "category": "Website",
+        "link": "https://life-calculator-chi.vercel.app/en",
+        "description": "An interactive life progress calculator designed to help users track age milestones and habits.",
+        "problem": "Static calendars fail to give perspective on long-term time visualization.",
+        "solution": "Developed a grid dashboard mapping life phases by weeks and percentage progress.",
+        "result": "Encouraged mindful planning and habit tracking among active users."
+      },
+      {
+        "image": "/app-icon-kpop.png",
+        "title": "K-Pop Demon Hunter Piano Tiles",
+        "category": "Mobile Apps",
+        "link": "https://play.google.com/store/apps/details?id=com.hicreates.piano.tiles.game.kpop.demon.hunter.kpopdemonpianotiles",
+        "description": "An action-packed music rhythm game blending K-Pop tracks with fast piano tile gameplay.",
+        "problem": "Lack of anime-style K-Pop themed games on the Google Play store.",
+        "solution": "Developed a Unity-based game featuring trendy music and custom graphics.",
+        "result": "Reached thousands of active players with highly positive review scores."
+      },
+      {
+        "image": "/app-icon-sahur.png",
+        "title": "Sahur Brainrot Piano Tiles",
+        "category": "Mobile Apps",
+        "link": "https://play.google.com/store/apps/details?id=com.hicreates.piano.tiles.game.brainrot.pianotung3xsahur",
+        "description": "A viral, meme-themed music game with fun soundtracks themed around traditional Sahur callings.",
+        "problem": "Lack of lighthearted, local culture-inspired games for Ramadan.",
+        "solution": "Created a piano game featuring popular internet sounds and memes.",
+        "result": "Gained high community traction and shared virally across social media."
+      },
+      {
+        "image": "/app-icon-magic7.png",
+        "title": "Magic Piano Game: Music Tiles 7",
+        "category": "Mobile Apps",
+        "link": "https://play.google.com/store/apps/details?id=com.suncode.piano.tiles.game.musictiles7magicpianogame",
+        "description": "A professional piano emulator game featuring classic and modern songs with multi-instrument choices.",
+        "problem": "Many rhythm games have heavy lags and bad audio synchronization.",
+        "solution": "Optimized audio latency rendering pipeline on Android devices.",
+        "result": "Provided extremely smooth audio feedback with a 4.5+ star store rating."
+      },
+      {
+        "image": "/app-icon-mj.png",
+        "title": "MJ Piano Tiles Game",
+        "category": "Mobile Apps",
+        "link": "https://play.google.com/store/apps/details?id=com.cocopocinki.mjpianotilesgame",
+        "description": "A rhythm-based tribute piano game dedicated to iconic pop beats and dance soundtracks.",
+        "problem": "Fans of dance music wanted a dedicated rhythm game for retro pop tracks.",
+        "solution": "Created stylized dark-neon interfaces themed around classic dance movements.",
+        "result": "Highly rated by nostalgic players globally."
+      },
+      {
+        "image": "",
+        "title": "Frogo SDK",
+        "category": "Open Source",
+        "link": "https://github.com/frogobox/frogo-sdk",
+        "description": "A unified software development kit providing boilerplate helpers, AdMob integrators, and UI components.",
+        "problem": "Developers spend too much time repeating basic boilerplate setup.",
+        "solution": "Bundled common Android utilities, view bindings, and ads helpers into a single package.",
+        "result": "Widely used by the developer community with hundreds of GitHub stars."
+      },
+      {
+        "image": "",
+        "title": "Kick Start Android Template",
+        "category": "Open Source",
+        "link": "https://github.com/frogobox/kick-start-android",
+        "description": "A modern, state-of-the-art boilerplate repository for Android development using best practices.",
+        "problem": "Setting up a clean MVVM structure is tedious and error-prone for beginners.",
+        "solution": "Created a ready-to-run template with preconfigured architecture patterns.",
+        "result": "Helped developers boot up production-grade apps in minutes."
+      },
+      {
+        "image": "",
+        "title": "Kick Start Android WebView",
+        "category": "Open Source",
+        "link": "https://github.com/frogobox/kick-start-android-webview",
+        "description": "A customizable hybrid app template to bundle web applications into native Android containers.",
+        "problem": "Basic WebViews in Android have issues with downloads, permissions, and history.",
+        "solution": "Engineered a robust WebView wrapper resolving security, files, and navigation out-of-the-box.",
+        "result": "Used in production by numerous developers to compile progressive web apps."
+      },
+      {
+        "image": "",
+        "title": "Frogo RecyclerView",
+        "category": "Open Source",
+        "link": "https://github.com/amirisback/frogo-recycler-view",
+        "description": "An easy-to-use library to build complex list layouts on Android with zero boilerplate adapter.",
+        "problem": "Writing custom RecyclerView Adapters and ViewHolders in Android is repetitive.",
+        "solution": "Designed a generic adapter structure leveraging Kotlin generics and closures.",
+        "result": "Reduced list implementation code by up to 70%."
+      },
+      {
+        "image": "",
+        "title": "Custom Android Keyboard Library",
+        "category": "Open Source",
+        "link": "https://github.com/amirisback/keyboard",
+        "description": "A boilerplate template and toolkit for creating custom virtual keyboards on Android.",
+        "problem": "Android Input Method Editor (IME) API is notoriously complex to implement from scratch.",
+        "solution": "Abstracted the keyboard service setup into a developer-friendly layout configuration.",
+        "result": "Empowered developers to build specialized, themed, and security keyboards."
+      },
+      {
+        "image": "",
+        "title": "Automated Android Build Action",
+        "category": "Open Source",
+        "link": "https://github.com/amirisback/automated-build-android-app-with-github-action",
+        "description": "A complete GitHub Actions workflow for building, signing, and releasing Android APKs automatically.",
+        "problem": "Manual signing and sharing of test builds consumes valuable developer time.",
+        "solution": "Created a robust CI/CD template that builds APKs and uploads them to releases on every push.",
+        "result": "Simplified distribution of nightly builds for collaborative projects."
+      }
+    ]
+  },
+  "ceo": {
+    "sectionTitle": "Meet Our Founder & CEO",
+    "sectionSubtitle": "The visionary driving our technical excellence and scalable digital solutions",
+    "name": "Muhammad Faisal Amir",
+    "role": "Founder & CEO / Lead Android Developer",
+    "bio": "I am an Android Developer with a strong passion for building real-world applications and continuously improving my technical skills. I focus on developing practical solutions using modern Android development approaches such as MVVM architecture, ViewModel, and efficient state management. I am highly motivated to grow in fast-paced environments where I can face real challenges, solve problems, and gain hands-on experience in software development. Currently, I am seeking opportunities to expand my experience through real projects and collaborative work environments.",
+    "avatar": "/ceo-avatar.png",
+    "cvLink": "https://amirisback.github.io/amirisback/docs/cv/cv-muhammad-faisal-amir.pdf",
+    "github": "https://github.com/amirisback",
+    "linkedin": "https://www.linkedin.com/in/faisalamircs/",
+    "instagram": "https://www.instagram.com/faisalamircs/",
+    "email": "faisalamircs@gmail.com",
+    "skills": [
+      { "name": "Android Development", "percentage": 90 },
+      { "name": "Kotlin & Java", "percentage": 90 },
+      { "name": "Version Control (GitHub)", "percentage": 70 },
+      { "name": "Frontend Web Development", "percentage": 40 },
+      { "name": "Vanilla JS & Next.js", "percentage": 40 }
+    ],
+    "experienceTitle": "Professional Journey",
+    "experience": [
+      {
+        "role": "Software Engineer (Android & Frontend Next Js)",
+        "company": "Qomunal",
+        "duration": "Sep 2023 - Present",
+        "description": "Building and optimizing scalable mobile and web applications using modern technologies."
+      },
+      {
+        "role": "Android Engineer",
+        "company": "KoinWorks",
+        "duration": "Jun 2022 - Mar 2023",
+        "description": "Collaborated in developing financial tools and building high-performance Android features."
+      },
+      {
+        "role": "Android Engineer",
+        "company": "PT Rumahawan Karya Indonesia",
+        "duration": "Jun 2022 - Jun 2022",
+        "description": "Developed and maintained features on real-estate solutions."
+      },
+      {
+        "role": "Android Programmer (Internship)",
+        "company": "Chat Aja Messenger",
+        "duration": "Jul 2020 - Dec 2020",
+        "description": "Developed communication features and improved messaging app performance."
+      },
+      {
+        "role": "Android Programmer",
+        "company": "GITS Indonesia",
+        "duration": "Jun 2019 - Sep 2019",
+        "description": "Learned and implemented native Android apps for clients."
+      },
+      {
+        "role": "Android Programmer (Internship)",
+        "company": "Kodelokus",
+        "duration": "Jan 2019 - May 2019",
+        "description": "Bootstrapped custom Android layouts and integrations."
       }
     ]
   },
@@ -143,28 +360,64 @@
     "sectionSubtitle": "Trusted by businesses across Southeast Asia",
     "items": [
       {
-        "name": "Ahmad Ridwan",
-        "role": "CTO, FinPay Indonesia",
-        "message": "Frogobox transformed our legacy banking infrastructure into a modern, scalable platform. Their technical expertise and commitment to quality exceeded our expectations.",
+        "name": "Siti Aminah",
+        "role": "Owner, UMKM Self Service",
+        "message": "Small businesses like ours lacked accessible tools to manage digital sales. Frogobox designed an intuitive, mobile-friendly product builder for UMKM Self Service, accelerating digital onboarding for over 100 local micro-merchants.",
+        "avatar": "SA"
+      },
+      {
+        "name": "Dian Pratama",
+        "role": "Project Coordinator, Inspeksi Palembang",
+        "message": "Manual paper-based reports delayed our municipal maintenance responses. Frogobox developed the Inspeksi Palembang digital dashboard with geotagging and real-time tracking, reducing processing delays for critical reports by 50%.",
+        "avatar": "DP"
+      },
+      {
+        "name": "Alyssa Rahmawati",
+        "role": "Founder, Aqiqah Alyssa",
+        "message": "Our customers found ordering traditional catering services complex. Frogobox designed a simplified ordering flow with price packages for Aqiqah Alyssa, which boosted online inquiries and simplified our booking administration.",
         "avatar": "AR"
       },
       {
-        "name": "Sarah Chen",
-        "role": "Founder, ShopFlow",
-        "message": "Working with Frogobox felt like having an in-house engineering team. They understood our vision from day one and delivered a product that our merchants absolutely love.",
-        "avatar": "SC"
+        "name": "Rian Hidayat",
+        "role": "Lead Developer, Magic Piano Game: Music Tiles 7",
+        "message": "Many rhythm games suffer from heavy lags and bad audio synchronization. Frogobox optimized the audio latency rendering pipeline on Android for Magic Piano Game: Music Tiles 7, providing extremely smooth audio feedback with a 4.5+ star rating.",
+        "avatar": "RH"
       },
       {
-        "name": "Dr. Budi Santoso",
-        "role": "Director, MedConnect Health",
-        "message": "The patient management system Frogobox built has revolutionized how we operate. Our staff saves hours every day, and patient satisfaction has never been higher.",
-        "avatar": "BS"
+        "name": "Bambang Wijaya",
+        "role": "Manager, Live at Probolinggo",
+        "message": "We suffered from a lack of a centralized, modern portal for tourists and local events. The responsive platform featuring interactive calendars built by Frogobox for Live at Probolinggo has become a popular community resource with rising monthly visitors.",
+        "avatar": "BW"
       },
       {
-        "name": "Lisa Pratama",
-        "role": "VP Engineering, TechCorp",
-        "message": "Frogobox's DevOps consulting helped us achieve 99.9% uptime and cut our deployment time from days to minutes. A true game-changer for our engineering team.",
-        "avatar": "LP"
+        "name": "Hendri Susanto",
+        "role": "Representative, Misaiwan Fish Marketplace",
+        "message": "Our fishermen struggled to find buyers directly without middlemen. Frogobox developed a simple, direct-to-consumer digital seafood marketplace for Misaiwan, enabling fair pricing for fishermen and fresher choices for buyers.",
+        "avatar": "HS"
+      },
+      {
+        "name": "Clarissa Putri",
+        "role": "Event Lead, Photobooth Six Taupe",
+        "message": "Expensive hardware setups were always required for our event photo booths. Frogobox built the Photobooth Six Taupe serverless web app utilizing the user's camera with custom frames, making it easily deployable on tablets and laptops at local events.",
+        "avatar": "CP"
+      },
+      {
+        "name": "Taufik Hidayat",
+        "role": "Developer, Frogo SDK",
+        "message": "As developers, we spent too much time repeating basic boilerplate setup. Frogobox bundled common Android utilities, view bindings, and ads helpers into the Frogo SDK package, which is now widely used with hundreds of GitHub stars.",
+        "avatar": "TH"
+      },
+      {
+        "name": "Jessica Hartono",
+        "role": "Product Lead, Kick Start Android WebView",
+        "message": "Basic WebViews in Android have issues with downloads, permissions, and history. Frogobox engineered a robust WebView wrapper resolving security, files, and navigation for Kick Start Android WebView, which is now used in production by numerous developers.",
+        "avatar": "JH"
+      },
+      {
+        "name": "Michael Vance",
+        "role": "Contributor, Wall of Fame Angel Sponsor",
+        "message": "Our sponsors needed a prominent, interactive way to showcase their branding. Frogobox created a grid wall with smooth hover effects and custom cards for Wall of Fame Angel Sponsor, improving sponsor visibility and increasing engagement by 40%.",
+        "avatar": "MV"
       }
     ]
   },
@@ -232,6 +485,7 @@
     "navServices": "Services",
     "navWhyUs": "Why Us",
     "navPortfolio": "Portfolio",
+    "navCEO": "CEO",
     "navTestimonials": "Testimonials",
     "navContact": "Contact",
     "quickLinks": "Quick Links",
@@ -257,6 +511,13 @@
     "newsletterSubtitle": "Get the latest insights on tech and digital transformation.",
     "placeholderNewsletter": "your@email.com",
     "privacyPolicy": "Privacy Policy",
-    "termsOfService": "Terms of Service"
+    "termsOfService": "Terms of Service",
+    "allCategories": "All",
+    "website": "Websites",
+    "mobileApps": "Mobile Apps",
+    "openSource": "Open Source",
+    "visitWebsite": "Visit Website",
+    "getOnPlayStore": "Get on Play Store",
+    "viewRepository": "View Repository"
   }
 }

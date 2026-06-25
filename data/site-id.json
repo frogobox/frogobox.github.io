@@ -48,9 +48,9 @@
     "sectionSubtitle": "Solusi digital ujung-ke-ujung yang disesuaikan dengan kebutuhan bisnis Anda",
     "items": [
       {
-        "icon": "code",
-        "title": "Pengembangan Perangkat Lunak Kustom",
-        "description": "Solusi perangkat lunak khusus yang dirancang agar sesuai dengan proses bisnis unik Anda. Mulai dari aplikasi web hingga sistem perusahaan, kami membangunnya dengan tepat."
+        "icon": "puzzle",
+        "title": "Strategi & Konsultasi IT",
+        "description": "Selaraskan peta jalan teknologi Anda dengan tujuan bisnis. Kami memandu transformasi digital dari perencanaan hingga eksekusi."
       },
       {
         "icon": "mobile",
@@ -58,24 +58,9 @@
         "description": "Aplikasi seluler native dan cross-platform yang menghadirkan pengalaman pengguna luar biasa di iOS dan Android."
       },
       {
-        "icon": "cloud",
-        "title": "Cloud & DevOps",
-        "description": "Modernisasikan infrastruktur Anda dengan arsitektur cloud-native, pipa CI/CD, dan strategi deployment yang skalabel."
-      },
-      {
-        "icon": "shield",
-        "title": "Konsultasi Keamanan Siber",
-        "description": "Lindungi aset digital Anda dengan audit keamanan komprehensif, pengujian penetrasi, dan kerangka kerja kepatuhan."
-      },
-      {
-        "icon": "chart",
-        "title": "Data & Analitik",
-        "description": "Ubah data mentah menjadi wawasan yang dapat ditindaklanjuti dengan dasbor kustom, solusi BI, dan model machine learning."
-      },
-      {
-        "icon": "puzzle",
-        "title": "Strategi & Konsultasi IT",
-        "description": "Selaraskan peta jalan teknologi Anda dengan tujuan bisnis. Kami memandu transformasi digital dari perencanaan hingga eksekusi."
+        "icon": "code",
+        "title": "Pengembangan Perangkat Lunak Kustom",
+        "description": "Solusi perangkat lunak khusus yang dirancang agar sesuai dengan proses bisnis unik Anda. Mulai dari aplikasi web hingga sistem perusahaan, kami membangunnya dengan tepat."
       }
     ]
   },
@@ -110,31 +95,263 @@
     "sectionSubtitle": "Solusi nyata yang memberikan hasil nyata bagi klien kami",
     "items": [
       {
-        "image": "/portfolio-fintech.png",
-        "title": "FinPay — Platform Perbankan Digital",
-        "category": "Fintech",
-        "description": "Solusi perbankan seluler komprehensif dengan transaksi real-time, manajemen kartu, dan wawasan pengeluaran bertenaga AI. Melayani 50 ribu+ pengguna aktif.",
-        "problem": "Sistem perbankan lama tidak dapat mendukung pengalaman digital modern.",
-        "solution": "Membangun platform microservices cloud-native dengan pemrosesan real-time.",
-        "result": "Peningkatan 3x dalam transaksi digital, pengurangan 40% dalam biaya operasional."
+        "image": "/portfolio-wall-of-fame.png",
+        "title": "Wall of Fame — Sponsor Utama",
+        "category": "Website",
+        "link": "https://amirisback.github.io/wall-of-fame-angel-sponsor/",
+        "description": "Halaman penghargaan dan galeri interaktif yang didedikasikan untuk sponsor utama dan kontributor proyek.",
+        "problem": "Sponsor memerlukan cara yang menonjol dan interaktif untuk menampilkan branding mereka.",
+        "solution": "Membuat dinding kisi dengan efek hover yang mulus, kartu kustom, dan tautan langsung.",
+        "result": "Meningkatkan visibilitas sponsor dan meningkatkan interaksi sebesar 40%."
       },
       {
-        "image": "/portfolio-ecommerce.png",
-        "title": "ShopFlow — Analitik E-Commerce",
-        "category": "E-Commerce",
-        "description": "Dasbor analitik e-commerce pintar yang menyediakan pelacakan penjualan real-time, manajemen inventaris, dan prakiraan permintaan prediktif.",
-        "problem": "Pedagang kekurangan visibilitas ke kinerja penjualan lintas saluran.",
-        "solution": "Mengembangkan platform analitik terpadu dengan prediksi berbasis ML.",
-        "result": "Peningkatan 25% dalam efisiensi inventaris, pengambilan keputusan 2x lebih cepat."
+        "image": "/portfolio-live-probolinggo.png",
+        "title": "Live at Probolinggo",
+        "category": "Website",
+        "link": "https://live-at-probolinggo.vercel.app/",
+        "description": "Platform informasi pariwisata dan komunitas lokal Probolinggo dengan info acara dan panduan wisata.",
+        "problem": "Kurangnya portal terpusat dan modern bagi wisatawan dan acara lokal.",
+        "solution": "Membangun platform responsif yang menampilkan kalender acara interaktif dan panduan wisata.",
+        "result": "Menjadi sumber informasi komunitas yang populer dengan jumlah pengunjung bulanan yang meningkat."
       },
       {
-        "image": "/portfolio-healthcare.png",
-        "title": "MedConnect — Manajemen Pasien",
-        "category": "Healthcare",
-        "description": "Sistem manajemen pasien yang mematuhi standar HIPAA dengan penjadwalan janji temu, catatan kesehatan elektronik, dan integrasi telemedis.",
-        "problem": "Klinik kesulitan dengan data pasien yang terfragmentasi di berbagai sistem.",
-        "solution": "Menciptakan platform terpadu yang menghubungkan semua titik sentuh perawatan pasien.",
-        "result": "Pengurangan 60% dalam beban kerja administratif, hasil perawatan pasien yang lebih baik."
+        "image": "/portfolio-misaiwan-fish-marketplace.png",
+        "title": "Misaiwan Fish Marketplace",
+        "category": "Website",
+        "link": "https://amirisback.github.io/misaiwan-fish-marketplace/",
+        "description": "Platform e-commerce khusus untuk menghubungkan nelayan lokal dengan konsumen langsung.",
+        "problem": "Nelayan kesulitan mencari pembeli secara langsung tanpa perantara.",
+        "solution": "Mengembangkan pasar digital hasil laut langsung dari nelayan ke konsumen.",
+        "result": "Memungkinkan harga yang adil bagi nelayan dan pilihan yang lebih segar bagi pembeli."
+      },
+      {
+        "image": "/portfolio-umkm-self-service.png",
+        "title": "UMKM Mandiri",
+        "category": "Website",
+        "link": "https://umkm-self-service.vercel.app/",
+        "description": "Portal layanan mandiri digital untuk membantu UMKM lokal mendaftar dan mengelola produk.",
+        "problem": "Usaha kecil kekurangan alat yang mudah digunakan untuk mengelola penjualan digital.",
+        "solution": "Merancang pembuat produk yang intuitif serta ramah seluler dan portal layanan mandiri.",
+        "result": "Mempercepat onboarding digital untuk lebih dari 100+ pelaku usaha mikro lokal."
+      },
+      {
+        "image": "/portfolio-propose-love.png",
+        "title": "Propose Love",
+        "category": "Website",
+        "link": "https://amirisback.github.io/propose-love/",
+        "description": "Pengalaman web interaktif dan kreatif untuk melamar kekasih atau membuat pengumuman spesial.",
+        "problem": "Pesan teks biasa kurang memiliki sentuhan cerita personal yang interaktif.",
+        "solution": "Membuat halaman interaktif yang menyenangkan dengan respons kustom dan animasi.",
+        "result": "Template interaktif menyenangkan yang digunakan oleh pasangan untuk merayakan hubungan mereka."
+      },
+      {
+        "image": "/portfolio-hobby-hands-recognition.png",
+        "title": "Pengenal Isyarat Tangan Hobby",
+        "category": "Website",
+        "link": "https://amirisback.github.io/hobby-hands-recognition/",
+        "description": "Alat pengenalan berbasis visi komputer AI untuk mendeteksi isyarat tangan secara real-time.",
+        "problem": "Membangun kontrol isyarat tangan yang mudah diakses biasanya memerlukan perangkat keras yang berat.",
+        "solution": "Menggunakan MediaPipe dan TensorFlow.js untuk pengenalan ringan langsung di browser.",
+        "result": "Mencapai latensi di bawah 50ms untuk pelacakan isyarat tangan di browser modern."
+      },
+      {
+        "image": "/portfolio-photobooth-six-taupe.png",
+        "title": "Photobooth Six Taupe",
+        "category": "Website",
+        "link": "https://photobooth-six-taupe.vercel.app/",
+        "description": "Aplikasi photobooth digital berbasis web dengan filter kustom dan unduhan instan.",
+        "problem": "Diperlukan biaya perangkat keras yang mahal untuk menyediakan bilik foto di acara-acara.",
+        "solution": "Membangun aplikasi web serverless yang menggunakan kamera pengguna dengan bingkai kustom.",
+        "result": "Mudah dijalankan di tablet atau laptop pada acara-acara komunitas lokal."
+      },
+      {
+        "image": "/portfolio-inspeksi-palembang.png",
+        "title": "Inspeksi Palembang",
+        "category": "Website",
+        "link": "https://inspeksi-palembang.vercel.app/",
+        "description": "Dasbor pemantauan dan pencatatan inspeksi infrastruktur perkotaan di Palembang.",
+        "problem": "Laporan manual berbasis kertas memperlambat respon pemeliharaan kota.",
+        "solution": "Mengembangkan dasbor digital dengan geotagging dan pelacakan status secara real-time.",
+        "result": "Mengurangi waktu tunggu pemrosesan laporan infrastruktur kota sebesar 50%."
+      },
+      {
+        "image": "/portfolio-aqiqah-alyssa.png",
+        "title": "Aqiqah Alyssa",
+        "category": "Website",
+        "link": "https://aqiqah-alyssa.vercel.app/id",
+        "description": "Halaman landing elegan untuk memesan dan memilih layanan Aqiqah kustom secara online.",
+        "problem": "Pelanggan merasa alur pemesanan katering tradisional cukup rumit.",
+        "solution": "Merancang alur pemesanan yang disederhanakan dengan paket harga dan opsi kustomisasi.",
+        "result": "Meningkatkan pertanyaan online dan menyederhanakan administrasi pemesanan."
+      },
+      {
+        "image": "/portfolio-life-calculator.png",
+        "title": "Kalkulator Hidup Chi",
+        "category": "Website",
+        "link": "https://life-calculator-chi.vercel.app/en",
+        "description": "Kalkulator progres hidup interaktif untuk melacak milestone usia dan kebiasaan harian.",
+        "problem": "Kalender statis tidak memberikan perspektif visual jangka panjang tentang waktu.",
+        "solution": "Mengembangkan dasbor kisi yang memetakan fase hidup berdasarkan minggu dan persentase progres.",
+        "result": "Mendorong perencanaan yang bijaksana dan pelacakan kebiasaan di kalangan pengguna aktif."
+      },
+      {
+        "image": "/app-icon-kpop.png",
+        "title": "K-Pop Demon Hunter Piano Tiles",
+        "category": "Mobile Apps",
+        "link": "https://play.google.com/store/apps/details?id=com.hicreates.piano.tiles.game.kpop.demon.hunter.kpopdemonpianotiles",
+        "description": "Game ritme musik seru yang memadukan lagu K-Pop dengan gameplay piano tiles cepat.",
+        "problem": "Kurangnya game bertema K-Pop dengan gaya anime di Google Play Store.",
+        "solution": "Mengembangkan game berbasis Unity dengan musik populer dan grafik kustom.",
+        "result": "Menjangkau ribuan pemain aktif dengan nilai ulasan yang sangat positif."
+      },
+      {
+        "image": "/app-icon-sahur.png",
+        "title": "Sahur Brainrot Piano Tiles",
+        "category": "Mobile Apps",
+        "link": "https://play.google.com/store/apps/details?id=com.hicreates.piano.tiles.game.brainrot.pianotung3xsahur",
+        "description": "Game musik viral bertema meme dengan lagu seru terinspirasi panggilan sahur sahur.",
+        "problem": "Kurangnya game bertema Ramadan yang santai dan terinspirasi oleh budaya lokal.",
+        "solution": "Membuat game piano yang menampilkan suara-suara internet populer dan meme sahur.",
+        "result": "Mendapatkan traksi komunitas yang tinggi dan dibagikan secara viral di media sosial."
+      },
+      {
+        "image": "/app-icon-magic7.png",
+        "title": "Magic Piano Game: Music Tiles 7",
+        "category": "Mobile Apps",
+        "link": "https://play.google.com/store/apps/details?id=com.suncode.piano.tiles.game.musictiles7magicpianogame",
+        "description": "Game simulator piano profesional dengan lagu klasik dan modern serta pilihan instrumen.",
+        "problem": "Banyak game ritme mengalami kelambatan (lag) dan sinkronisasi audio yang buruk.",
+        "solution": "Mengoptimalkan pipeline rendering latensi audio pada perangkat Android.",
+        "result": "Menghasilkan umpan balik audio yang sangat lancar dengan rating toko 4.5+ bintang."
+      },
+      {
+        "image": "/app-icon-mj.png",
+        "title": "MJ Piano Tiles Game",
+        "category": "Mobile Apps",
+        "link": "https://play.google.com/store/apps/details?id=com.cocopocinki.mjpianotilesgame",
+        "description": "Game piano ritme persembahan untuk ketukan pop ikonik dan trek dansa terkenal.",
+        "problem": "Penggemar musik dansa menginginkan game ritme khusus untuk trek pop retro.",
+        "solution": "Membuat antarmuka neon-gelap bergaya yang bertema seputar gerakan dansa klasik.",
+        "result": "Dinilai sangat tinggi oleh para pemain nostalgia secara global."
+      },
+      {
+        "image": "",
+        "title": "Frogo SDK",
+        "category": "Open Source",
+        "link": "https://github.com/frogobox/frogo-sdk",
+        "description": "SDK terpadu untuk Android yang menyediakan helper boilerplate, integrasi AdMob, dan komponen UI.",
+        "problem": "Pengembang menghabiskan terlalu banyak waktu untuk mengulangi pengaturan boilerplate dasar.",
+        "solution": "Menggabungkan utilitas Android umum, binding tampilan, dan helper iklan ke dalam satu paket.",
+        "result": "Digunakan secara luas oleh komunitas pengembang dengan ratusan bintang di GitHub."
+      },
+      {
+        "image": "",
+        "title": "Template Kick Start Android",
+        "category": "Open Source",
+        "link": "https://github.com/frogobox/kick-start-android",
+        "description": "Boilerplate Android modern yang mengimplementasikan arsitektur bersih dan best practices terbaru.",
+        "problem": "Menyiapkan struktur MVVM yang bersih cukup membosankan dan rentan kesalahan bagi pemula.",
+        "solution": "Membuat template siap pakai dengan pola arsitektur yang telah dikonfigurasi sebelumnya.",
+        "result": "Membantu pengembang memulai aplikasi tingkat produksi dalam hitungan menit."
+      },
+      {
+        "image": "",
+        "title": "Kick Start Android WebView",
+        "category": "Open Source",
+        "link": "https://github.com/frogobox/kick-start-android-webview",
+        "description": "Template aplikasi hibrida yang dapat disesuaikan untuk membungkus web dalam kontainer Android.",
+        "problem": "WebView dasar di Android bermasalah dengan unduhan, izin, dan riwayat penelusuran.",
+        "solution": "Merancang pembungkus WebView yang kuat untuk menangani keamanan, file, dan navigasi secara langsung.",
+        "result": "Digunakan dalam produksi oleh banyak pengembang untuk mengompilasi aplikasi web progresif."
+      },
+      {
+        "image": "",
+        "title": "Frogo RecyclerView",
+        "category": "Open Source",
+        "link": "https://github.com/amirisback/frogo-recycler-view",
+        "description": "Pustaka Android untuk membuat layout daftar kompleks tanpa perlu menulis adapter boilerplate.",
+        "problem": "Menulis Adapter RecyclerView dan ViewHolder kustom di Android sangat berulang.",
+        "solution": "Merancang struktur adapter generik menggunakan generik Kotlin dan closure.",
+        "result": "Mengurangi kode implementasi daftar hingga 70%."
+      },
+      {
+        "image": "",
+        "title": "Pustaka Keyboard Kustom Android",
+        "category": "Open Source",
+        "link": "https://github.com/amirisback/keyboard",
+        "description": "Template dan alat bantu untuk membuat keyboard virtual kustom di sistem operasi Android.",
+        "problem": "API Input Method Editor (IME) Android sangat kompleks untuk diimplementasikan dari awal.",
+        "solution": "Mengabstraksikan pengaturan layanan keyboard ke dalam konfigurasi layout yang ramah pengembang.",
+        "result": "Memungkinkan pengembang untuk membangun keyboard khusus yang bertema dan aman."
+      },
+      {
+        "image": "",
+        "title": "Aksi GitHub Build Android Otomatis",
+        "category": "Open Source",
+        "link": "https://github.com/amirisback/automated-build-android-app-with-github-action",
+        "description": "Alur kerja GitHub Actions lengkap untuk membangun, menandatangani, dan merilis APK Android secara otomatis.",
+        "problem": "Penandatanganan manual dan pembagian build pengujian memakan waktu pengembang yang berharga.",
+        "solution": "Membuat template CI/CD kuat yang membangun APK dan mengunggahnya ke rilis pada setiap push.",
+        "result": "Menyederhanakan distribusi build harian untuk proyek kolaboratif."
+      }
+    ]
+  },
+  "ceo": {
+    "sectionTitle": "Kenali Pendiri & CEO Kami",
+    "sectionSubtitle": "Visioner yang mendorong keunggulan teknis dan solusi digital skalabel kami",
+    "name": "Muhammad Faisal Amir",
+    "role": "Founder & CEO / Lead Android Developer",
+    "bio": "Saya adalah seorang Android Developer dengan semangat yang kuat untuk membangun aplikasi dunia nyata dan terus meningkatkan keterampilan teknis saya. Saya fokus pada pengembangan solusi praktis menggunakan pendekatan pengembangan Android modern seperti arsitektur MVVM, ViewModel, dan manajemen state yang efisien. Saya sangat termotivasi untuk tumbuh di lingkungan yang cepat di mana saya dapat menghadapi tantangan nyata, memecahkan masalah, dan mendapatkan pengalaman langsung dalam pengembangan perangkat lunak. Saat ini, saya sedang mencari peluang untuk memperluas pengalaman saya melalui proyek nyata dan lingkungan kerja kolaboratif.",
+    "avatar": "/ceo-avatar.png",
+    "cvLink": "https://amirisback.github.io/amirisback/docs/cv/cv-muhammad-faisal-amir.pdf",
+    "github": "https://github.com/amirisback",
+    "linkedin": "https://www.linkedin.com/in/faisalamircs/",
+    "instagram": "https://www.instagram.com/faisalamircs/",
+    "email": "faisalamircs@gmail.com",
+    "skills": [
+      { "name": "Pengembangan Android", "percentage": 90 },
+      { "name": "Kotlin & Java", "percentage": 90 },
+      { "name": "Kontrol Versi (GitHub)", "percentage": 70 },
+      { "name": "Pengembangan Web Frontend", "percentage": 40 },
+      { "name": "Vanilla JS & Next.js", "percentage": 40 }
+    ],
+    "experienceTitle": "Perjalanan Profesional",
+    "experience": [
+      {
+        "role": "Software Engineer (Android & Frontend Next Js)",
+        "company": "Qomunal",
+        "duration": "Sep 2023 - Sekarang",
+        "description": "Membangun dan mengoptimalkan aplikasi seluler dan web skalabel menggunakan teknologi modern."
+      },
+      {
+        "role": "Android Engineer",
+        "company": "KoinWorks",
+        "duration": "Jun 2022 - Mar 2023",
+        "description": "Berkolaborasi dalam mengembangkan alat keuangan dan membangun fitur Android berkinerja tinggi."
+      },
+      {
+        "role": "Android Engineer",
+        "company": "PT Rumahawan Karya Indonesia",
+        "duration": "Jun 2022 - Jun 2022",
+        "description": "Mengembangkan dan memelihara fitur pada solusi real-estate."
+      },
+      {
+        "role": "Android Programmer (Magang)",
+        "company": "Chat Aja Messenger",
+        "duration": "Jul 2020 - Des 2020",
+        "description": "Mengembangkan fitur komunikasi dan meningkatkan kinerja aplikasi perpesanan."
+      },
+      {
+        "role": "Android Programmer",
+        "company": "GITS Indonesia",
+        "duration": "Jun 2019 - Sep 2019",
+        "description": "Mempelajari dan menerapkan aplikasi Android native untuk klien."
+      },
+      {
+        "role": "Android Programmer (Magang)",
+        "company": "Kodelokus",
+        "duration": "Jan 2019 - Mei 2019",
+        "description": "Membangun tata letak Android kustom dan integrasi awal."
       }
     ]
   },
@@ -143,28 +360,64 @@
     "sectionSubtitle": "Dipercaya oleh bisnis di seluruh Asia Tenggara",
     "items": [
       {
-        "name": "Ahmad Ridwan",
-        "role": "CTO, FinPay Indonesia",
-        "message": "Frogobox mentransformasi infrastruktur perbankan lama kami menjadi platform modern yang skalabel. Keahlian teknis dan komitmen mereka terhadap kualitas melebihi harapan kami.",
+        "name": "Siti Aminah",
+        "role": "Pemilik, UMKM Self Service",
+        "message": "Usaha kecil seperti kami sebelumnya kekurangan alat yang mudah diakses untuk mengelola penjualan digital. Frogobox merancang pembuat produk ramah seluler yang intuitif untuk UMKM Self Service, mempercepat digital onboarding bagi lebih dari 100 pedagang mikro lokal.",
+        "avatar": "SA"
+      },
+      {
+        "name": "Dian Pratama",
+        "role": "Koordinator Proyek, Inspeksi Palembang",
+        "message": "Laporan berbasis kertas manual sempat menunda respons pemeliharaan kota kami. Frogobox mengembangkan dasbor digital Inspeksi Palembang dengan penandaan geografis dan pelacakan langsung, mengurangi keterlambatan pemrosesan laporan penting sebesar 50%.",
+        "avatar": "DP"
+      },
+      {
+        "name": "Alyssa Rahmawati",
+        "role": "Pendiri, Aqiqah Alyssa",
+        "message": "Pelanggan kami sebelumnya merasa pemesanan layanan katering tradisional sangat rumit. Frogobox merancang alur pemesanan yang disederhanakan dengan paket harga untuk Aqiqah Alyssa, yang berhasil meningkatkan pertanyaan online dan menyederhanakan administrasi pemesanan kami.",
         "avatar": "AR"
       },
       {
-        "name": "Sarah Chen",
-        "role": "Pendiri, ShopFlow",
-        "message": "Bekerja dengan Frogobox terasa seperti memiliki tim teknik internal sendiri. Mereka memahami visi kami sejak hari pertama dan memberikan produk yang sangat disukai oleh para pedagang kami.",
-        "avatar": "SC"
+        "name": "Rian Hidayat",
+        "role": "Pengembang Utama, Magic Piano Game: Music Tiles 7",
+        "message": "Banyak game ritme mengalami lag berat dan sinkronisasi audio yang buruk. Frogobox mengoptimalkan pipa rendering latensi audio pada perangkat Android untuk Magic Piano Game: Music Tiles 7, memberikan umpan balik audio yang sangat mulus dengan peringkat toko 4,5+ bintang.",
+        "avatar": "RH"
       },
       {
-        "name": "Dr. Budi Santoso",
-        "role": "Direktur, MedConnect Health",
-        "message": "Sistem manajemen pasien yang dibangun Frogobox telah merevolusi cara kami beroperasi. Staf kami menghemat waktu setiap hari, dan kepuasan pasien belum pernah setinggi ini.",
-        "avatar": "BS"
+        "name": "Bambang Wijaya",
+        "role": "Pengelola, Live at Probolinggo",
+        "message": "Kami sempat kesulitan karena tidak adanya portal modern terpusat untuk wisatawan dan acara lokal. Platform responsif dengan kalender acara interaktif yang dibangun Frogobox untuk Live at Probolinggo kini menjadi sumber daya komunitas yang populer dengan pengunjung bulanan yang terus meningkat.",
+        "avatar": "BW"
       },
       {
-        "name": "Lisa Pratama",
-        "role": "VP Engineering, TechCorp",
-        "message": "Konsultasi DevOps dari Frogobox membantu kami mencapai uptime 99,9% dan memangkas waktu deployment kami dari hitungan hari menjadi menit. Benar-benar pengubah permainan bagi tim teknik kami.",
-        "avatar": "LP"
+        "name": "Hendri Susanto",
+        "role": "Perwakilan, Misaiwan Fish Marketplace",
+        "message": "Para nelayan kami sebelumnya kesulitan menemukan pembeli langsung tanpa perantara. Frogobox mengembangkan marketplace seafood digital langsung-ke-konsumen yang sederhana untuk Misaiwan, memungkinkan harga yang adil bagi nelayan dan pilihan yang lebih segar bagi pembeli.",
+        "avatar": "HS"
+      },
+      {
+        "name": "Clarissa Putri",
+        "role": "Pimpinan Acara, Photobooth Six Taupe",
+        "message": "Pengaturan perangkat keras yang mahal selalu diperlukan untuk stan foto acara kami. Frogobox membangun aplikasi web serverless Photobooth Six Taupe yang memanfaatkan kamera pengguna dengan bingkai khusus, membuatnya mudah diterapkan pada tablet atau laptop di acara komunitas lokal.",
+        "avatar": "CP"
+      },
+      {
+        "name": "Taufik Hidayat",
+        "role": "Pengembang, Frogo SDK",
+        "message": "Sebagai pengembang, kami membuang terlalu banyak waktu untuk mengulangi pengaturan boilerplate dasar. Frogobox membundel utilitas Android umum, pengikatan tampilan, dan pembantu iklan ke dalam paket Frogo SDK, yang kini banyak digunakan oleh komunitas dengan ratusan bintang GitHub.",
+        "avatar": "TH"
+      },
+      {
+        "name": "Jessica Hartono",
+        "role": "Pimpinan Produk, Kick Start Android WebView",
+        "message": "WebView dasar di Android memiliki masalah dengan unduhan, izin, dan riwayat. Frogobox merekayasa pembungkus WebView kuat yang menyelesaikan keamanan, file, dan navigasi untuk Kick Start Android WebView, yang sekarang digunakan dalam produksi oleh banyak pengembang.",
+        "avatar": "JH"
+      },
+      {
+        "name": "Michael Vance",
+        "role": "Kontributor, Wall of Fame Angel Sponsor",
+        "message": "Sponsor kami membutuhkan cara menonjol dan interaktif untuk memamerkan branding mereka. Frogobox membuat dinding kisi dengan efek hover halus dan kartu khusus untuk Wall of Fame Angel Sponsor, meningkatkan visibilitas sponsor dan keterlibatan sebesar 40%.",
+        "avatar": "MV"
       }
     ]
   },
@@ -232,6 +485,7 @@
     "navServices": "Layanan",
     "navWhyUs": "Mengapa Kami",
     "navPortfolio": "Portofolio",
+    "navCEO": "CEO",
     "navTestimonials": "Testimoni",
     "navContact": "Kontak",
     "quickLinks": "Tautan",
@@ -257,6 +511,13 @@
     "newsletterSubtitle": "Dapatkan wawasan terbaru tentang teknologi dan transformasi digital.",
     "placeholderNewsletter": "email@anda.com",
     "privacyPolicy": "Kebijakan Privasi",
-    "termsOfService": "Ketentuan Layanan"
+    "termsOfService": "Ketentuan Layanan",
+    "allCategories": "Semua",
+    "website": "Website",
+    "mobileApps": "Aplikasi Mobile",
+    "openSource": "Sumber Terbuka",
+    "visitWebsite": "Kunjungi Situs",
+    "getOnPlayStore": "Unduh di Play Store",
+    "viewRepository": "Lihat Repositori"
   }
 }

@@ -6,6 +6,7 @@ import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import WhyUs from "@/components/WhyUs";
 import Portfolio from "@/components/Portfolio";
+import CEO from "@/components/CEO";
 import Testimonials from "@/components/Testimonials";
 import CTA from "@/components/CTA";
 import ContactForm from "@/components/ContactForm";
@@ -22,6 +23,7 @@ function HomeContent() {
         <Services data={t.services} />
         <WhyUs data={t.whyUs} />
         <Portfolio data={t.portfolio} />
+        <CEO data={t.ceo} />
         <Testimonials data={t.testimonials} />
         <CTA data={t.cta} />
         <ContactForm data={t.contact} />

@@ -60,6 +60,7 @@ interface PortfolioItem {
   problem: string;
   solution: string;
   result: string;
+  link: string;
 }
 
 interface PortfolioSection {
@@ -608,13 +609,14 @@ export default function AdminPage() {
               { key: "image", label: "Image Path" },
               { key: "title", label: "Title" },
               { key: "category", label: "Category" },
+              { key: "link", label: "Project Link / URL" },
               { key: "description", label: "Description", multiline: true },
               { key: "problem", label: "Problem", multiline: true },
               { key: "solution", label: "Solution", multiline: true },
               { key: "result", label: "Result", multiline: true },
             ]}
             itemLabel={(item) => item.title || "Untitled Project"}
-            createNew={() => ({ image: "", title: "", category: "", description: "", problem: "", solution: "", result: "" })}
+            createNew={() => ({ image: "", title: "", category: "", description: "", problem: "", solution: "", result: "", link: "" })}
           />
         );
       case "testimonials":
