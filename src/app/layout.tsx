@@ -21,6 +21,9 @@ export const metadata: Metadata = {
   keywords: [
     "Frogobox",
     "Frogobox Media Indonesia",
+    "Frogobox Instagram",
+    "@frogobox",
+    "https://www.instagram.com/frogobox/",
     "IT consulting",
     "software development",
     "web development",
@@ -37,8 +40,12 @@ export const metadata: Metadata = {
     "jasa pembuatan aplikasi",
     "jasa pembuatan website",
     "software house Indonesia",
+    "developer Android Indonesia",
   ],
-  authors: [{ name: site.name }],
+  authors: [{ name: site.name, url: site.url || "https://frogoboxmedia.com" }],
+  creator: site.name,
+  publisher: site.name,
+  category: "Technology & Software Development",
   alternates: {
     canonical: site.url || "https://frogoboxmedia.com",
     languages: {
@@ -66,6 +73,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${site.name} — ${site.tagline}`,
     description: site.description,
+    site: "@frogobox",
+    creator: "@frogobox",
     images: ["/images/logo-color.png"],
   },
   robots: {
@@ -109,14 +118,24 @@ const jsonLd = [
     "@type": "Organization",
     "@id": `${site.url || "https://frogoboxmedia.com"}/#organization`,
     name: site.name,
+    alternateName: ["Frogobox", "Frogobox Media", "@frogobox"],
     url: site.url || "https://frogoboxmedia.com",
     logo: `${site.url || "https://frogoboxmedia.com"}/images/logo-color.png`,
     description: site.description,
     sameAs: [
+      "https://www.instagram.com/frogobox/",
       "https://github.com/frogobox",
       "https://linkedin.com/company/frogobox",
-      "https://instagram.com/frogobox",
       "https://youtube.com/@frogobox",
+    ],
+    knowsAbout: [
+      "Software Development",
+      "Mobile App Development",
+      "Android Apps",
+      "iOS Apps",
+      "Web Development",
+      "Cloud Solutions",
+      "IT Consulting",
     ],
     contactPoint: {
       "@type": "ContactPoint",
@@ -132,6 +151,7 @@ const jsonLd = [
     "@id": `${site.url || "https://frogoboxmedia.com"}/#website`,
     url: site.url || "https://frogoboxmedia.com",
     name: site.name,
+    alternateName: ["Frogobox Website", "Frogobox Media Indonesia"],
     publisher: {
       "@id": `${site.url || "https://frogoboxmedia.com"}/#organization`,
     },
@@ -151,6 +171,22 @@ const jsonLd = [
       addressLocality: "Indonesia",
     },
     priceRange: "$$",
+    sameAs: [
+      "https://www.instagram.com/frogobox/",
+      "https://github.com/frogobox",
+      "https://linkedin.com/company/frogobox",
+      "https://youtube.com/@frogobox",
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "@id": "https://www.instagram.com/frogobox/#profile",
+    url: "https://www.instagram.com/frogobox/",
+    name: "Frogobox Media Instagram Official",
+    mainEntity: {
+      "@id": `${site.url || "https://frogoboxmedia.com"}/#organization`,
+    },
   },
 ];
 
