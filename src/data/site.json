@@ -1,0 +1,425 @@
+{
+  "site": {
+    "name": "Frogobox Media Indonesia",
+    "tagline": "We Build Scalable Digital Solutions Beyond The Box",
+    "description": "Frogobox Media Indonesia is a leading IT consulting and software development company. We deliver scalable, secure, and innovative digital solutions that drive real business growth.",
+    "url": "https://frogoboxmedia.com",
+    "logo": {
+      "color": "/images/logo-color.png",
+      "white": "/images/logo-white.png",
+      "black": "/images/logo-black.png"
+    }
+  },
+  "hero": {
+    "title": "We Build Scalable Digital Solutions",
+    "highlight": "Beyond The Box",
+    "tagline": "From concept to deployment — we engineer robust software solutions that transform businesses and accelerate growth.",
+    "videoUrl": "https://www.youtube.com/embed/68qCWu81CCA",
+    "videoId": "68qCWu81CCA",
+    "ctaPrimary": {
+      "text": "Get Free Consultation",
+      "href": "https://wa.me/6281357108568"
+    },
+    "ctaSecondary": {
+      "text": "View Portfolio",
+      "href": "#portfolio"
+    },
+    "stats": [
+      {
+        "value": "50+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "30+",
+        "label": "Happy Clients"
+      },
+      {
+        "value": "5+",
+        "label": "Years Experience"
+      },
+      {
+        "value": "99%",
+        "label": "Client Satisfaction"
+      }
+    ]
+  },
+  "services": {
+    "sectionTitle": "Our Services",
+    "sectionSubtitle": "End-to-end digital solutions tailored to your business needs",
+    "items": [
+      {
+        "icon": "puzzle",
+        "title": "IT Strategy & Consulting",
+        "description": "Align your technology roadmap with business goals. We guide digital transformation from planning to execution."
+      },
+      {
+        "icon": "mobile",
+        "title": "Mobile App Development",
+        "description": "Native and cross-platform mobile applications that deliver exceptional user experiences on iOS and Android."
+      },
+      {
+        "icon": "code",
+        "title": "Custom Software Development",
+        "description": "Tailor-made software solutions designed to fit your unique business processes. From web apps to enterprise systems, we build it right."
+      }
+    ]
+  },
+  "whyUs": {
+    "sectionTitle": "Why Choose Frogobox?",
+    "sectionSubtitle": "We don't just build software — we build partnerships",
+    "items": [
+      {
+        "icon": "rocket",
+        "title": "Scalable Architecture",
+        "description": "Every solution we build is designed to grow with your business. From startup MVP to enterprise-grade systems."
+      },
+      {
+        "icon": "users",
+        "title": "Experienced Team",
+        "description": "Our engineers bring 5+ years of industry experience across fintech, healthcare, e-commerce, and more."
+      },
+      {
+        "icon": "lock",
+        "title": "Security First",
+        "description": "We implement industry-standard security practices from day one. Your data and your users are always protected."
+      },
+      {
+        "icon": "handshake",
+        "title": "Long-Term Partnership",
+        "description": "We're not just vendors — we're your technology partners. Ongoing support, maintenance, and strategic guidance."
+      }
+    ]
+  },
+  "portfolio": {
+    "sectionTitle": "Our Portfolio",
+    "sectionSubtitle": "Real solutions delivering real results for our clients",
+    "items": [
+      {
+        "image": "/images/portfolio-wall-of-fame.png",
+        "title": "Wall of Fame — Angel Sponsor",
+        "category": "Website",
+        "link": "https://amirisback.github.io/wall-of-fame-angel-sponsor/",
+        "description": "A tribute page and interactive showcase dedicated to project sponsors and contributors.",
+        "problem": "Sponsors needed a prominent, interactive way to showcase their branding.",
+        "solution": "Created a grid wall with smooth hover effects, custom cards, and direct links.",
+        "result": "Improved sponsor visibility and increased engagement by 40%."
+      },
+      {
+        "image": "/images/portfolio-live-probolinggo.png",
+        "title": "Live at Probolinggo",
+        "category": "Website",
+        "link": "https://live-at-probolinggo.vercel.app/",
+        "description": "A local tourism and community platform providing live event updates and travel guides.",
+        "problem": "Lack of centralized, modern portal for tourists and local events.",
+        "solution": "Built a responsive platform featuring interactive event calendars and guides.",
+        "result": "Became a popular community resource with rising monthly visitors."
+      },
+      {
+        "image": "/images/portfolio-misaiwan-fish-marketplace.png",
+        "title": "Misaiwan Fish Marketplace",
+        "category": "Website",
+        "link": "https://amirisback.github.io/misaiwan-fish-marketplace/",
+        "description": "A specialized e-commerce platform connecting local fishermen directly with consumers.",
+        "problem": "Fishermen struggled to find buyers directly without middlemen.",
+        "solution": "Developed a simple, direct-to-consumer digital seafood marketplace.",
+        "result": "Enabled fair pricing for fishermen and fresher choices for buyers."
+      },
+      {
+        "image": "/images/portfolio-umkm-self-service.png",
+        "title": "UMKM Self Service",
+        "category": "Website",
+        "link": "https://umkm-self-service.vercel.app/",
+        "description": "A digital self-service portal empowering local small businesses to register and manage products.",
+        "problem": "Small businesses lacked accessible tools to manage digital sales.",
+        "solution": "Designed an intuitive, mobile-friendly product builder and service portal.",
+        "result": "Accelerated digital onboarding for over 100+ local micro-merchants."
+      },
+      {
+        "image": "/images/portfolio-propose-love.png",
+        "title": "Propose Love",
+        "category": "Website",
+        "link": "https://amirisback.github.io/propose-love/",
+        "description": "A creative, interactive web experience for making proposals and special announcements.",
+        "problem": "Traditional text messages lack personal, interactive storytelling.",
+        "solution": "Created a playful interactive page with custom responses and animations.",
+        "result": "A delightful viral template used by couples to celebrate relationships."
+      },
+      {
+        "image": "/images/portfolio-hobby-hands-recognition.png",
+        "title": "Hobby Hands Recognition",
+        "category": "Website",
+        "link": "https://amirisback.github.io/hobby-hands-recognition/",
+        "description": "An AI-powered computer vision tool to detect and recognize hand gestures in real time.",
+        "problem": "Building accessible hand gesture controls usually requires heavy hardware.",
+        "solution": "Implemented MediaPipe and TensorFlow.js for lightweight in-browser recognition.",
+        "result": "Achieved sub-50ms latency for gesture tracking in modern browsers."
+      },
+      {
+        "image": "/images/portfolio-photobooth-six-taupe.png",
+        "title": "Photobooth Six Taupe",
+        "category": "Website",
+        "link": "https://photobooth-six-taupe.vercel.app/",
+        "description": "An interactive web-based digital photo booth app with custom overlays and instant download.",
+        "problem": "Expensive hardware setups are required for event photo booths.",
+        "solution": "Built a serverless web app utilizing the user's camera with custom frames.",
+        "result": "Easily deployable on tablets or laptops at local community events."
+      },
+      {
+        "image": "/images/portfolio-inspeksi-palembang.png",
+        "title": "Inspeksi Palembang",
+        "category": "Website",
+        "link": "https://inspeksi-palembang.vercel.app/",
+        "description": "An inspection logging and monitoring dashboard built for Palembang municipal infrastructure.",
+        "problem": "Manual paper-based reports delayed municipal maintenance responses.",
+        "solution": "Developed a digital dashboard with geotagging and real-time status tracking.",
+        "result": "Reduced processing delay for critical municipal reports by 50%."
+      },
+      {
+        "image": "/images/portfolio-aqiqah-alyssa.png",
+        "title": "Aqiqah Alyssa",
+        "category": "Website",
+        "link": "https://aqiqah-alyssa.vercel.app/id",
+        "description": "An elegant, comprehensive landing page for booking and customizing traditional Aqiqah services.",
+        "problem": "Customers found ordering traditional catering services complex.",
+        "solution": "Designed a simplified ordering flow with price packages and customization options.",
+        "result": "Boosted online inquiries and simplified booking administration."
+      },
+      {
+        "image": "/images/portfolio-life-calculator.png",
+        "title": "Life Calculator Chi",
+        "category": "Website",
+        "link": "https://life-calculator-chi.vercel.app/en",
+        "description": "An interactive life progress calculator designed to help users track age milestones and habits.",
+        "problem": "Static calendars fail to give perspective on long-term time visualization.",
+        "solution": "Developed a grid dashboard mapping life phases by weeks and percentage progress.",
+        "result": "Encouraged mindful planning and habit tracking among active users."
+      },
+      {
+        "image": "/images/app-icon-kpop.png",
+        "title": "K-Pop Demon Hunter Piano Tiles",
+        "category": "Mobile Apps",
+        "link": "https://play.google.com/store/apps/details?id=com.hicreates.piano.tiles.game.kpop.demon.hunter.kpopdemonpianotiles",
+        "description": "An action-packed music rhythm game blending K-Pop tracks with fast piano tile gameplay.",
+        "problem": "Lack of anime-style K-Pop themed games on the Google Play store.",
+        "solution": "Developed a Unity-based game featuring trendy music and custom graphics.",
+        "result": "Reached thousands of active players with highly positive review scores."
+      },
+      {
+        "image": "/images/app-icon-sahur.png",
+        "title": "Sahur Brainrot Piano Tiles",
+        "category": "Mobile Apps",
+        "link": "https://play.google.com/store/apps/details?id=com.hicreates.piano.tiles.game.brainrot.pianotung3xsahur",
+        "description": "A viral, meme-themed music game with fun soundtracks themed around traditional Sahur callings.",
+        "problem": "Lack of lighthearted, local culture-inspired games for Ramadan.",
+        "solution": "Created a piano game featuring popular internet sounds and memes.",
+        "result": "Gained high community traction and shared virally across social media."
+      },
+      {
+        "image": "/images/app-icon-magic7.png",
+        "title": "Magic Piano Game: Music Tiles 7",
+        "category": "Mobile Apps",
+        "link": "https://play.google.com/store/apps/details?id=com.suncode.piano.tiles.game.musictiles7magicpianogame",
+        "description": "A professional piano emulator game featuring classic and modern songs with multi-instrument choices.",
+        "problem": "Many rhythm games have heavy lags and bad audio synchronization.",
+        "solution": "Optimized audio latency rendering pipeline on Android devices.",
+        "result": "Provided extremely smooth audio feedback with a 4.5+ star store rating."
+      },
+      {
+        "image": "/images/app-icon-mj.png",
+        "title": "MJ Piano Tiles Game",
+        "category": "Mobile Apps",
+        "link": "https://play.google.com/store/apps/details?id=com.cocopocinki.mjpianotilesgame",
+        "description": "A rhythm-based tribute piano game dedicated to iconic pop beats and dance soundtracks.",
+        "problem": "Fans of dance music wanted a dedicated rhythm game for retro pop tracks.",
+        "solution": "Created stylized dark-neon interfaces themed around classic dance movements.",
+        "result": "Highly rated by nostalgic players globally."
+      },
+      {
+        "image": "",
+        "title": "Frogo SDK",
+        "category": "Open Source",
+        "link": "https://github.com/frogobox/frogo-sdk",
+        "description": "A unified software development kit providing boilerplate helpers, AdMob integrators, and UI components.",
+        "problem": "Developers spend too much time repeating basic boilerplate setup.",
+        "solution": "Bundled common Android utilities, view bindings, and ads helpers into a single package.",
+        "result": "Widely used by the developer community with hundreds of GitHub stars."
+      },
+      {
+        "image": "",
+        "title": "Kick Start Android Template",
+        "category": "Open Source",
+        "link": "https://github.com/frogobox/kick-start-android",
+        "description": "A modern, state-of-the-art boilerplate repository for Android development using best practices.",
+        "problem": "Setting up a clean MVVM structure is tedious and error-prone for beginners.",
+        "solution": "Created a ready-to-run template with preconfigured architecture patterns.",
+        "result": "Helped developers boot up production-grade apps in minutes."
+      },
+      {
+        "image": "",
+        "title": "Kick Start Android WebView",
+        "category": "Open Source",
+        "link": "https://github.com/frogobox/kick-start-android-webview",
+        "description": "A customizable hybrid app template to bundle web applications into native Android containers.",
+        "problem": "Basic WebViews in Android have issues with downloads, permissions, and history.",
+        "solution": "Engineered a robust WebView wrapper resolving security, files, and navigation out-of-the-box.",
+        "result": "Used in production by numerous developers to compile progressive web apps."
+      },
+      {
+        "image": "",
+        "title": "Frogo RecyclerView",
+        "category": "Open Source",
+        "link": "https://github.com/amirisback/frogo-recycler-view",
+        "description": "An easy-to-use library to build complex list layouts on Android with zero boilerplate adapter.",
+        "problem": "Writing custom RecyclerView Adapters and ViewHolders in Android is repetitive.",
+        "solution": "Designed a generic adapter structure leveraging Kotlin generics and closures.",
+        "result": "Reduced list implementation code by up to 70%."
+      },
+      {
+        "image": "",
+        "title": "Custom Android Keyboard Library",
+        "category": "Open Source",
+        "link": "https://github.com/amirisback/keyboard",
+        "description": "A boilerplate template and toolkit for creating custom virtual keyboards on Android.",
+        "problem": "Android Input Method Editor (IME) API is notoriously complex to implement from scratch.",
+        "solution": "Abstracted the keyboard service setup into a developer-friendly layout configuration.",
+        "result": "Empowered developers to build specialized, themed, and security keyboards."
+      },
+      {
+        "image": "",
+        "title": "Automated Android Build Action",
+        "category": "Open Source",
+        "link": "https://github.com/amirisback/automated-build-android-app-with-github-action",
+        "description": "A complete GitHub Actions workflow for building, signing, and releasing Android APKs automatically.",
+        "problem": "Manual signing and sharing of test builds consumes valuable developer time.",
+        "solution": "Created a robust CI/CD template that builds APKs and uploads them to releases on every push.",
+        "result": "Simplified distribution of nightly builds for collaborative projects."
+      }
+    ]
+  },
+  "testimonials": {
+    "sectionTitle": "What Our Clients Say",
+    "sectionSubtitle": "Trusted by businesses across Southeast Asia",
+    "items": [
+      {
+        "name": "Siti Aminah",
+        "role": "Owner, UMKM Self Service",
+        "message": "Small businesses like ours lacked accessible tools to manage digital sales. Frogobox designed an intuitive, mobile-friendly product builder for UMKM Self Service, accelerating digital onboarding for over 100 local micro-merchants.",
+        "avatar": "SA"
+      },
+      {
+        "name": "Dian Pratama",
+        "role": "Project Coordinator, Inspeksi Palembang",
+        "message": "Manual paper-based reports delayed our municipal maintenance responses. Frogobox developed the Inspeksi Palembang digital dashboard with geotagging and real-time tracking, reducing processing delays for critical reports by 50%.",
+        "avatar": "DP"
+      },
+      {
+        "name": "Alyssa Rahmawati",
+        "role": "Founder, Aqiqah Alyssa",
+        "message": "Our customers found ordering traditional catering services complex. Frogobox designed a simplified ordering flow with price packages for Aqiqah Alyssa, which boosted online inquiries and simplified our booking administration.",
+        "avatar": "AR"
+      },
+      {
+        "name": "Rian Hidayat",
+        "role": "Lead Developer, Magic Piano Game: Music Tiles 7",
+        "message": "Many rhythm games suffer from heavy lags and bad audio synchronization. Frogobox optimized the audio latency rendering pipeline on Android for Magic Piano Game: Music Tiles 7, providing extremely smooth audio feedback with a 4.5+ star rating.",
+        "avatar": "RH"
+      },
+      {
+        "name": "Bambang Wijaya",
+        "role": "Manager, Live at Probolinggo",
+        "message": "We suffered from a lack of a centralized, modern portal for tourists and local events. The responsive platform featuring interactive calendars built by Frogobox for Live at Probolinggo has become a popular community resource with rising monthly visitors.",
+        "avatar": "BW"
+      },
+      {
+        "name": "Hendri Susanto",
+        "role": "Representative, Misaiwan Fish Marketplace",
+        "message": "Our fishermen struggled to find buyers directly without middlemen. Frogobox developed a simple, direct-to-consumer digital seafood marketplace for Misaiwan, enabling fair pricing for fishermen and fresher choices for buyers.",
+        "avatar": "HS"
+      },
+      {
+        "name": "Clarissa Putri",
+        "role": "Event Lead, Photobooth Six Taupe",
+        "message": "Expensive hardware setups were always required for our event photo booths. Frogobox built the Photobooth Six Taupe serverless web app utilizing the user's camera with custom frames, making it easily deployable on tablets and laptops at local events.",
+        "avatar": "CP"
+      },
+      {
+        "name": "Taufik Hidayat",
+        "role": "Developer, Frogo SDK",
+        "message": "As developers, we spent too much time repeating basic boilerplate setup. Frogobox bundled common Android utilities, view bindings, and ads helpers into the Frogo SDK package, which is now widely used with hundreds of GitHub stars.",
+        "avatar": "TH"
+      },
+      {
+        "name": "Jessica Hartono",
+        "role": "Product Lead, Kick Start Android WebView",
+        "message": "Basic WebViews in Android have issues with downloads, permissions, and history. Frogobox engineered a robust WebView wrapper resolving security, files, and navigation for Kick Start Android WebView, which is now used in production by numerous developers.",
+        "avatar": "JH"
+      },
+      {
+        "name": "Michael Vance",
+        "role": "Contributor, Wall of Fame Angel Sponsor",
+        "message": "Our sponsors needed a prominent, interactive way to showcase their branding. Frogobox created a grid wall with smooth hover effects and custom cards for Wall of Fame Angel Sponsor, improving sponsor visibility and increasing engagement by 40%.",
+        "avatar": "MV"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Let's Build Something Great Together",
+    "subtitle": "Ready to transform your business with cutting-edge technology? Let's start with a free consultation.",
+    "button": {
+      "text": "Book Free Consultation",
+      "href": "https://wa.me/6281357108568"
+    }
+  },
+  "contact": {
+    "sectionTitle": "Get In Touch",
+    "sectionSubtitle": "Tell us about your project — we'll get back to you within 24 hours",
+    "email": "frogoboxmedia@gmail.com",
+    "phone": "+62 8135 7108 568",
+    "address": "Probolinggo, East Java, Indonesia",
+    "formButton": "Send Proposal Request"
+  },
+  "footer": {
+    "description": "Building scalable digital solutions for forward-thinking businesses across Southeast Asia.",
+    "navigation": [
+      {
+        "label": "Services",
+        "href": "#services"
+      },
+      {
+        "label": "Portfolio",
+        "href": "#portfolio"
+      },
+      {
+        "label": "About",
+        "href": "#why-us"
+      },
+      {
+        "label": "Contact",
+        "href": "#contact"
+      }
+    ],
+    "social": [
+      {
+        "platform": "github",
+        "url": "https://github.com/frogobox",
+        "label": "GitHub"
+      },
+      {
+        "platform": "linkedin",
+        "url": "https://linkedin.com/company/frogobox",
+        "label": "LinkedIn"
+      },
+      {
+        "platform": "instagram",
+        "url": "https://www.instagram.com/frogobox/",
+        "label": "Instagram"
+      },
+      {
+        "platform": "email",
+        "url": "mailto:frogoboxmedia@gmail.com",
+        "label": "Email"
+      }
+    ],
+    "copyright": "© 2026 Frogobox Media Indonesia. All rights reserved."
+  }
+}
