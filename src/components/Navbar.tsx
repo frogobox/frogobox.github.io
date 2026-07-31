@@ -13,7 +13,6 @@ export default function Navbar() {
     { label: t.ui.navServices, href: "#services" },
     { label: t.ui.navWhyUs, href: "#why-us" },
     { label: t.ui.navPortfolio, href: "#portfolio" },
-    { label: t.ui.navCEO, href: "#ceo" },
     { label: t.ui.navTestimonials, href: "#testimonials" },
     { label: t.ui.navContact, href: "#contact" },
   ];

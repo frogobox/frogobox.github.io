@@ -296,65 +296,6 @@
       }
     ]
   },
-  "ceo": {
-    "sectionTitle": "Kenali Pendiri & CEO Kami",
-    "sectionSubtitle": "Visioner yang mendorong keunggulan teknis dan solusi digital skalabel kami",
-    "name": "Muhammad Faisal Amir",
-    "role": "Founder & CEO / Lead Android Developer",
-    "bio": "Saya adalah seorang Android Developer dengan semangat yang kuat untuk membangun aplikasi dunia nyata dan terus meningkatkan keterampilan teknis saya. Saya fokus pada pengembangan solusi praktis menggunakan pendekatan pengembangan Android modern seperti arsitektur MVVM, ViewModel, dan manajemen state yang efisien. Saya sangat termotivasi untuk tumbuh di lingkungan yang cepat di mana saya dapat menghadapi tantangan nyata, memecahkan masalah, dan mendapatkan pengalaman langsung dalam pengembangan perangkat lunak. Saat ini, saya sedang mencari peluang untuk memperluas pengalaman saya melalui proyek nyata dan lingkungan kerja kolaboratif.",
-    "avatar": "/images/ceo-avatar.png",
-    "cvLink": "https://amirisback.github.io/amirisback/docs/cv/cv-muhammad-faisal-amir.pdf",
-    "github": "https://github.com/amirisback",
-    "linkedin": "https://www.linkedin.com/in/faisalamircs/",
-    "instagram": "https://www.instagram.com/faisalamircs/",
-    "email": "faisalamircs@gmail.com",
-    "skills": [
-      { "name": "Pengembangan Android", "percentage": 90 },
-      { "name": "Kotlin & Java", "percentage": 90 },
-      { "name": "Kontrol Versi (GitHub)", "percentage": 70 },
-      { "name": "Pengembangan Web Frontend", "percentage": 40 },
-      { "name": "Vanilla JS & Next.js", "percentage": 40 }
-    ],
-    "experienceTitle": "Perjalanan Profesional",
-    "experience": [
-      {
-        "role": "Software Engineer (Android & Frontend Next Js)",
-        "company": "Qomunal",
-        "duration": "Sep 2023 - Sekarang",
-        "description": "Membangun dan mengoptimalkan aplikasi seluler dan web skalabel menggunakan teknologi modern."
-      },
-      {
-        "role": "Android Engineer",
-        "company": "KoinWorks",
-        "duration": "Jun 2022 - Mar 2023",
-        "description": "Berkolaborasi dalam mengembangkan alat keuangan dan membangun fitur Android berkinerja tinggi."
-      },
-      {
-        "role": "Android Engineer",
-        "company": "PT Rumahawan Karya Indonesia",
-        "duration": "Jun 2022 - Jun 2022",
-        "description": "Mengembangkan dan memelihara fitur pada solusi real-estate."
-      },
-      {
-        "role": "Android Programmer (Magang)",
-        "company": "Chat Aja Messenger",
-        "duration": "Jul 2020 - Des 2020",
-        "description": "Mengembangkan fitur komunikasi dan meningkatkan kinerja aplikasi perpesanan."
-      },
-      {
-        "role": "Android Programmer",
-        "company": "GITS Indonesia",
-        "duration": "Jun 2019 - Sep 2019",
-        "description": "Mempelajari dan menerapkan aplikasi Android native untuk klien."
-      },
-      {
-        "role": "Android Programmer (Magang)",
-        "company": "Kodelokus",
-        "duration": "Jan 2019 - Mei 2019",
-        "description": "Membangun tata letak Android kustom dan integrasi awal."
-      }
-    ]
-  },
   "testimonials": {
     "sectionTitle": "Apa Kata Klien Kami",
     "sectionSubtitle": "Dipercaya oleh bisnis di seluruh Asia Tenggara",
@@ -485,7 +426,6 @@
     "navServices": "Layanan",
     "navWhyUs": "Mengapa Kami",
     "navPortfolio": "Portofolio",
-    "navCEO": "CEO",
     "navTestimonials": "Testimoni",
     "navContact": "Kontak",
     "quickLinks": "Tautan",
