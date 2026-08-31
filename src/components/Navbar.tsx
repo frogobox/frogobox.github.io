@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import ThemeToggle from "./ThemeToggle";
 import Icon from "./Icon";
 import { useLanguage } from "@/lib/LanguageContext";
@@ -14,6 +15,7 @@ export default function Navbar() {
     { label: t.ui.navWhyUs, href: "#why-us" },
     { label: t.ui.navPortfolio, href: "#portfolio" },
     { label: t.ui.navTestimonials, href: "#testimonials" },
+    { label: t.ui.navBusinessPlan || "Business Plan", href: "/business-plan", isRoute: true },
     { label: t.ui.navContact, href: "#contact" },
   ];
   const [scrolled, setScrolled] = useState(false);
@@ -98,21 +100,36 @@ export default function Navbar() {
 
         {/* Desktop Nav */}
         <div className="hidden lg:flex items-center gap-1">
-          {navLinks.map((link) => (
-            <button
-              key={link.href}
-              onClick={() => handleNavClick(link.href)}
-              className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
-                activeSection === link.href
-                  ? "text-primary-600 bg-primary-50/80 dark:text-primary-400 dark:bg-primary-950/30"
-                  : scrolled
-                    ? "text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-tertiary)]"
-                    : "text-white/80 hover:text-white hover:bg-white/10"
-              }`}
-            >
-              {link.label}
-            </button>
-          ))}
+          {navLinks.map((link) =>
+            link.isRoute ? (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={`px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-300 flex items-center gap-1.5 ${
+                  scrolled
+                    ? "text-emerald-600 dark:text-emerald-400 hover:bg-emerald-50 dark:hover:bg-emerald-950/40"
+                    : "text-emerald-300 hover:text-white hover:bg-white/10"
+                }`}
+              >
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                {link.label}
+              </Link>
+            ) : (
+              <button
+                key={link.href}
+                onClick={() => handleNavClick(link.href)}
+                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
+                  activeSection === link.href
+                    ? "text-primary-600 bg-primary-50/80 dark:text-primary-400 dark:bg-primary-950/30"
+                    : scrolled
+                      ? "text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-tertiary)]"
+                      : "text-white/80 hover:text-white hover:bg-white/10"
+                }`}
+              >
+                {link.label}
+              </button>
+            )
+          )}
         </div>
 
         {/* Right Side */}
@@ -165,19 +182,31 @@ export default function Navbar() {
         }`}
       >
         <div className="px-4 pt-2 pb-4 space-y-1 glass mt-2 mx-4 rounded-2xl">
-          {navLinks.map((link) => (
-            <button
-              key={link.href}
-              onClick={() => handleNavClick(link.href)}
-              className={`w-full text-left px-4 py-3 rounded-xl text-sm font-medium transition-colors ${
-                activeSection === link.href
-                  ? "text-primary-600 bg-primary-50 dark:text-primary-400 dark:bg-primary-950/30"
-                  : "text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-tertiary)]"
-              }`}
-            >
-              {link.label}
-            </button>
-          ))}
+          {navLinks.map((link) =>
+            link.isRoute ? (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={() => setMobileOpen(false)}
+                className="w-full text-left px-4 py-3 rounded-xl text-sm font-semibold transition-colors flex items-center gap-2 text-emerald-600 dark:text-emerald-400 hover:bg-emerald-50 dark:hover:bg-emerald-950/30"
+              >
+                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                {link.label}
+              </Link>
+            ) : (
+              <button
+                key={link.href}
+                onClick={() => handleNavClick(link.href)}
+                className={`w-full text-left px-4 py-3 rounded-xl text-sm font-medium transition-colors ${
+                  activeSection === link.href
+                    ? "text-primary-600 bg-primary-50 dark:text-primary-400 dark:bg-primary-950/30"
+                    : "text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-tertiary)]"
+                }`}
+              >
+                {link.label}
+              </button>
+            )
+          )}
           <button
             onClick={() => handleNavClick("#contact")}
             className="w-full btn-primary text-sm mt-2"

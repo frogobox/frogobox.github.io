@@ -458,6 +458,10 @@
     "openSource": "Sumber Terbuka",
     "visitWebsite": "Kunjungi Situs",
     "getOnPlayStore": "Unduh di Play Store",
-    "viewRepository": "Lihat Repositori"
+    "viewRepository": "Lihat Repositori",
+    "businessPlan": "Proposal Bisnis",
+    "partnershipProposal": "Proposal Kemitraan",
+    "heroBadgeBusinessPlan": "🚀 Pelajari Proposal Kemitraan Play Store & AdMob",
+    "navBusinessPlan": "Proposal Bisnis"
   }
 }

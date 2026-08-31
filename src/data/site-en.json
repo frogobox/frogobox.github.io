@@ -458,6 +458,10 @@
     "openSource": "Open Source",
     "visitWebsite": "Visit Website",
     "getOnPlayStore": "Get on Play Store",
-    "viewRepository": "View Repository"
+    "viewRepository": "View Repository",
+    "businessPlan": "Business Plan",
+    "partnershipProposal": "Partnership Proposal",
+    "heroBadgeBusinessPlan": "🚀 Explore Play Store & AdMob Partnership Proposal",
+    "navBusinessPlan": "Business Plan"
   }
 }

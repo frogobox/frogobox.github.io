@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import Icon from "./Icon";
 import { useLanguage } from "@/lib/LanguageContext";
 
@@ -84,6 +85,15 @@ export default function Footer({ data, siteName }: FooterProps) {
                   </a>
                 </li>
               ))}
+              <li>
+                <Link
+                  href="/business-plan"
+                  className="text-sm font-semibold transition-colors duration-200 text-emerald-600 dark:text-emerald-400 hover:underline inline-flex items-center gap-1.5"
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                  {t?.ui?.partnershipProposal || "Proposal Kemitraan"}
+                </Link>
+              </li>
             </ul>
           </div>
 

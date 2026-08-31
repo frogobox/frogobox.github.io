@@ -1,5 +1,9 @@
+"use client";
+
+import Link from "next/link";
 import Icon from "./Icon";
 import AnimateOnScroll from "./AnimateOnScroll";
+import { useLanguage } from "@/lib/LanguageContext";
 
 interface CTAProps {
   data: {
@@ -13,6 +17,8 @@ interface CTAProps {
 }
 
 export default function CTA({ data }: CTAProps) {
+  const { t } = useLanguage();
+
   return (
     <section id="cta" className="relative overflow-hidden py-24 sm:py-32">
       {/* Background gradient */}
@@ -47,13 +53,22 @@ export default function CTA({ data }: CTAProps) {
         </AnimateOnScroll>
 
         <AnimateOnScroll animation="animate-fade-in-up" delay={450}>
-          <a
-            href={data.button.href}
-            className="inline-flex items-center gap-3 px-10 py-5 bg-white text-primary-700 font-bold text-lg rounded-2xl hover:bg-white/90 transition-all duration-300 hover:shadow-2xl hover:shadow-black/20 hover:-translate-y-1"
-          >
-            {data.button.text}
-            <Icon name="arrowRight" className="w-5 h-5" />
-          </a>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 flex-wrap">
+            <a
+              href={data.button.href}
+              className="inline-flex items-center justify-center gap-3 px-10 py-5 bg-white text-primary-700 font-bold text-lg rounded-2xl hover:bg-white/90 transition-all duration-300 hover:shadow-2xl hover:shadow-black/20 hover:-translate-y-1 w-full sm:w-auto"
+            >
+              {data.button.text}
+              <Icon name="arrowRight" className="w-5 h-5" />
+            </a>
+            <Link
+              href="/business-plan"
+              className="inline-flex items-center justify-center gap-2.5 px-8 py-5 bg-white/15 hover:bg-white/25 text-white font-bold text-lg rounded-2xl border border-white/30 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 w-full sm:w-auto"
+            >
+              <Icon name="sparkles" className="w-5 h-5 text-emerald-300" />
+              {t?.ui?.partnershipProposal || "Proposal Kemitraan"}
+            </Link>
+          </div>
         </AnimateOnScroll>
       </div>
     </section>
