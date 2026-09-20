@@ -1,6 +1,6 @@
 "use client";
 
-import React, { createContext, useContext, useState, useEffect } from "react";
+import React, { createContext, useContext, useState, useEffect, useSyncExternalStore } from "react";
 import siteEn from "@/data/site-en.json";
 import siteId from "@/data/site-id.json";
 
@@ -15,40 +15,44 @@ interface LanguageContextProps {
 
 const LanguageContext = createContext<LanguageContextProps | undefined>(undefined);
 
-export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [language, setLanguageState] = useState<Language>("en");
-  const [mounted, setMounted] = useState(false);
+const emptySubscribe = () => () => {};
 
-  useEffect(() => {
-    setMounted(true);
-    const stored = localStorage.getItem("lang") as Language;
-    if (stored === "en" || stored === "id") {
-      setLanguageState(stored);
-      document.documentElement.lang = stored;
-    } else {
+export function LanguageProvider({ children }: { children: React.ReactNode }) {
+  const isMounted = useSyncExternalStore(emptySubscribe, () => true, () => false);
+
+  const clientLang = useSyncExternalStore<Language>(
+    (callback) => {
+      window.addEventListener("storage", callback);
+      return () => window.removeEventListener("storage", callback);
+    },
+    () => {
+      const stored = localStorage.getItem("lang") as Language;
+      if (stored === "en" || stored === "id") return stored;
       const browserLang = navigator.language.split("-")[0];
-      const defaultLang = browserLang === "id" ? "id" : "en";
-      setLanguageState(defaultLang);
-      document.documentElement.lang = defaultLang;
-    }
-  }, []);
+      return (browserLang === "id" ? "id" : "en") as Language;
+    },
+    () => "en" as Language
+  );
+
+  const [overrideLang, setOverrideLang] = useState<Language | null>(null);
+  const language = overrideLang || clientLang;
 
   const setLanguage = (lang: Language) => {
-    setLanguageState(lang);
+    setOverrideLang(lang);
     localStorage.setItem("lang", lang);
     document.documentElement.lang = lang;
   };
 
   // Sync title and metadata on changes
   useEffect(() => {
-    if (!mounted) return;
+    if (!isMounted) return;
     const currentSite = language === "id" ? siteId : siteEn;
-    document.title = `${currentSite.site.name} — ${currentSite.site.tagline}`;
+    document.title = `${currentSite.site.name} | ${currentSite.site.tagline}`;
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
       metaDesc.setAttribute("content", currentSite.site.description);
     }
-  }, [language, mounted]);
+  }, [language, isMounted]);
 
   const t = language === "id" ? siteId : siteEn;
 

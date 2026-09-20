@@ -472,10 +472,11 @@ export default function AdminPage() {
   const [branch, setBranch] = useState("");
   const [devMode, setDevMode] = useState(false);
   const [commitMessage, setCommitMessage] = useState("");
-  const [hasChanges, setHasChanges] = useState(false);
   const [originalData, setOriginalData] = useState<string>("");
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [selectedLang, setSelectedLang] = useState<"en" | "id">("en");
+
+  const hasChanges = Boolean(data && originalData && JSON.stringify(data) !== originalData);
 
   const showToast = useCallback((message: string, type: "success" | "error" | "info" = "info") => {
     setToast({ message, type });
@@ -492,7 +493,6 @@ export default function AdminPage() {
       setBranch(json.branch);
       setDevMode(json.devMode);
       setOriginalData(JSON.stringify(json.data));
-      setHasChanges(false);
     } catch (err) {
       showToast(`Failed to load data: ${err}`, "error");
     } finally {
@@ -501,15 +501,28 @@ export default function AdminPage() {
   }, [showToast]);
 
   useEffect(() => {
-    fetchData(selectedLang);
-  }, [fetchData, selectedLang]);
-
-  // Track changes
-  useEffect(() => {
-    if (data && originalData) {
-      setHasChanges(JSON.stringify(data) !== originalData);
+    let ignore = false;
+    async function loadData() {
+      try {
+        const res = await fetch(`/api/site?lang=${selectedLang}`);
+        const json = await res.json();
+        if (ignore) return;
+        if (json.error) throw new Error(json.error);
+        setData(json.data);
+        setBranch(json.branch);
+        setDevMode(json.devMode);
+        setOriginalData(JSON.stringify(json.data));
+      } catch (err) {
+        if (!ignore) showToast(`Failed to load data: ${err}`, "error");
+      } finally {
+        if (!ignore) setLoading(false);
+      }
     }
-  }, [data, originalData]);
+    loadData();
+    return () => {
+      ignore = true;
+    };
+  }, [selectedLang, showToast]);
 
   const handleSave = async () => {
     if (!data) return;
@@ -524,11 +537,10 @@ export default function AdminPage() {
       if (json.error) throw new Error(json.error);
 
       setOriginalData(JSON.stringify(data));
-      setHasChanges(false);
       setCommitMessage("");
 
       if (json.devMode) {
-        showToast("✅ Saved locally (Dev Mode — no git commit)", "success");
+        showToast("✅ Saved locally (Dev Mode: no git commit)", "success");
       } else if (json.gitResult?.success) {
         showToast("✅ Saved & pushed to master!", "success");
       } else {

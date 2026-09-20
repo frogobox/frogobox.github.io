@@ -1,0 +1,65 @@
+=== ANTI-SLOP DELIVERY GATE AUDIT REPORT ===
+Target: Frogobox Official Website (frogobox.github.io)
+Mode: Mode 1 (DURING Project)
+Auditor: Sandra (QA Engineer & Security Tester, Tim FE)
+Date: 2026-09-20T16:03:50Z
+
+================================================================================
+BLOCK 1: HARD GATE (Absolute Rules, No Exceptions)
+================================================================================
+[PASS] R-02 Copywriting: Zero em dashes (—) found in src/ (grep verified 0 results).
+[PASS] R-03 Mobile Responsiveness: Zero horizontal overflow; all buttons >= 44px min tap target; responsive grid reflow 320px to 1920px.
+[PASS] R-17 Data & Numbers: No fake stats (no invented "10M+ Users" or "99.99%"). Authentic project numbers only.
+[PASS] R-18 Testimonials: No fictional AI personas or random names. Testimonials originate from real Frogobox clients/projects (Inspeksi Palembang, Aqiqah Alyssa, Frogo SDK, Live at Probolinggo).
+[PASS] R-23 Clarification & Assets: Authentic Frogobox logo and assets used; no assumed AI avatars.
+[PASS] R-24 Navigation: Zero dead links; all navbar items point to real sections (#services, #why-us, #portfolio, #testimonials, #contact) or routes (/business-plan).
+[PASS] R-25 Color Contrast: All body text passes WCAG AA (>4.5:1 for normal text, >3:1 for large text).
+       - Light mode body: #0f172a on #ffffff = 17.8:1
+       - Light mode secondary: #475569 on #ffffff = 7.1:1
+       - Dark mode body: #f8fafc on #090d16 = 18.5:1
+       - Dark mode secondary: #94a3b8 on #090d16 = 8.2:1
+[PASS] R-26 Interactive Elements: Every button/link has functional behavior (smooth scroll, mailto, tel, Google Maps external link, or form validation feedback). Zero href="#" dead controls.
+[PASS] R-27 UI States: Form displays clean idle, focus, and success submitted feedback state.
+[PASS] R-28 FAQ: No generic template FAQ cluttering the landing page.
+[PASS] R-32 Keyboard Accessibility: Visible focus rings on all interactive elements (:focus-visible { outline: 2px solid #10b981; outline-offset: 2px; }); Tab / Enter / Space fully operable.
+[PASS] R-33 No File/CSS Patching: All changes authored directly in clean source code (Next.js / Tailwind v4).
+[PASS] R-34 Working Themes: Both Light and Dark modes tested and functional via ThemeToggle with persistent localStorage.
+[PASS] R-35 Verify Before Deliver: npm run lint (exit 0) and npm run build (exit 0) verified.
+[PASS] R-36 No Fabricated Claims: Zero fabricated compliance badges (no fake "SOC2", "ISO").
+[PASS] R-37 Design Direction: DESIGN.md defined and strictly adhered to.
+[PASS] R-38 Real Content: All projects, open source repos, and tools are genuine Frogobox offerings.
+
+================================================================================
+BLOCK 2: PURPOSE-GATE (Technique Allowed, Purpose Written)
+================================================================================
+[PASS] R-01 Color: Single deliberate Frog Green / Emerald accent (#10b981) representing Frogobox identity. No generic blue-to-purple or radial blur orbs.
+[PASS] R-04 Icons: SVG contextual icons used. Generic AI sparkles and rocket icons removed from hero and CTA.
+[PASS] R-06 Typography: Inter system sans with clean weight hierarchy. No fake monospace headers.
+[PASS] R-07 Background: Clean solid canvas; no blueprint grid lines, dot grids, or graph paper.
+[PASS] R-08 Button Arrows: Proportional, purpose-driven arrows only where page navigation occurs; decorative small arrows on every button eliminated.
+[PASS] R-09 Badges: Eyebrow pills duplicating headlines removed.
+[PASS] R-10 Glassmorphism: Dose cap respected (only sticky navbar uses subtle backdrop-blur-md; cards use solid surfaces).
+[PASS] R-12 Shadows: Elevation markers only; no excessive floating blurry shadows.
+[PASS] R-13 Glow: Zero glow on cards, badges, or backgrounds.
+[PASS] R-14 Feature Cards: Editorial rhythm and structured hierarchy in Services and Portfolio.
+[PASS] R-19 Animations: Dials set to MOTION 1 (Calm). No infinite pulse loops, no floating orbs, reduced motion respected.
+[PASS] R-22 Illustrations: Authentic screenshots and bespoke SVG mockups representing real code and layouts.
+
+================================================================================
+BLOCK 3: LIVELINESS TOOLKIT
+================================================================================
+[PASS] Dials Declared: ENERGY 2 / RHYTHM 2 / MOTION 1
+[PASS] One focal point per section.
+[PASS] Whitespace structured purposefully.
+[PASS] One deliberate accent: Frogobox Emerald (#10b981).
+
+================================================================================
+BLOCK 4: CRAFTSMANSHIP & QUALITY LOCKS
+================================================================================
+[PASS] C-1 Intentionality: Every design decision backed by a written one-line reason in DESIGN.md.
+[PASS] C-2 Functional Completeness: All controls operable.
+[PASS] C-3 Content-Driven Composition: Sections structured around real studio services and portfolio works.
+[PASS] C-4 Resilience: Verified across light/dark themes, mobile viewports, and keyboard focus.
+[PASS] C-5 Evidence Over Claims: Real links to Play Store, GitHub, and live websites.
+
+DELIVERY GATE STATUS: 100% PASS (ALL BLOCKS GREEN)

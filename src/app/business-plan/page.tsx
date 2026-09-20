@@ -403,7 +403,7 @@ export default function BusinessPlanPage() {
 
           <div className="p-4 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-between text-xs text-slate-400">
             <span className="flex items-center gap-2">
-              <Sparkles className="w-4 h-4 text-amber-400" /> Tidak diperlukan keahlian teknis dari Pihak Pertama — murni sistem pasif.
+              <Sparkles className="w-4 h-4 text-amber-400" /> Tidak diperlukan keahlian teknis dari Pihak Pertama, murni sistem pasif.
             </span>
             <span className="font-semibold text-slate-300">Skema: 50% Pihak 1 | 50% Pihak 2</span>
           </div>
@@ -494,7 +494,7 @@ export default function BusinessPlanPage() {
               </h4>
               <p className="text-slate-300 text-xs leading-relaxed">
                 Karena setiap bulan ditambahkan <b>4 aplikasi baru</b>, dalam 6 bulan akun akan memiliki{" "}
-                <b>24 aplikasi</b>. Penghasilan di atas adalah per aplikasi — bila memiliki beberapa aplikasi dengan
+                <b>24 aplikasi</b>. Penghasilan di atas adalah per aplikasi, bila memiliki beberapa aplikasi dengan
                 10k–50k download, akumulasi harian akan mencapai ratusan ribu rupiah per hari secara stabil.
               </p>
             </div>
@@ -731,7 +731,7 @@ export default function BusinessPlanPage() {
               Proteksi & Jaminan Investor
             </span>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-white">
-              Garansi Keamanan 200% ($50 USD) — Zero Financial Risk
+              Garansi Keamanan 200% ($50 USD): Zero Financial Risk
             </h2>
             <p className="text-sm text-slate-300">
               Komitmen penuh dari Pihak Kedua untuk memastikan investasi awal Anda 100% aman dan bebas risiko.

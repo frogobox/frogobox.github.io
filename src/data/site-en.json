@@ -13,7 +13,7 @@
   "hero": {
     "title": "We Build Scalable Digital Solutions",
     "highlight": "Beyond The Box",
-    "tagline": "From concept to deployment — we engineer robust software solutions that transform businesses and accelerate growth.",
+    "tagline": "From concept to deployment, we engineer robust software solutions that transform businesses and accelerate growth.",
     "videoUrl": "https://www.youtube.com/embed/68qCWu81CCA",
     "videoId": "68qCWu81CCA",
     "ctaPrimary": {
@@ -66,7 +66,7 @@
   },
   "whyUs": {
     "sectionTitle": "Why Choose Frogobox?",
-    "sectionSubtitle": "We don't just build software — we build partnerships",
+    "sectionSubtitle": "We don't just build software, we build partnerships",
     "items": [
       {
         "icon": "rocket",
@@ -86,7 +86,7 @@
       {
         "icon": "handshake",
         "title": "Long-Term Partnership",
-        "description": "We're not just vendors — we're your technology partners. Ongoing support, maintenance, and strategic guidance."
+        "description": "We're not just vendors, we're your technology partners. Ongoing support, maintenance, and strategic guidance."
       }
     ]
   },
@@ -96,7 +96,7 @@
     "items": [
       {
         "image": "/images/portfolio-wall-of-fame.png",
-        "title": "Wall of Fame — Angel Sponsor",
+        "title": "Wall of Fame: Angel Sponsor",
         "category": "Website",
         "link": "https://amirisback.github.io/wall-of-fame-angel-sponsor/",
         "description": "A tribute page and interactive showcase dedicated to project sponsors and contributors.",
@@ -372,7 +372,7 @@
   },
   "contact": {
     "sectionTitle": "Get In Touch",
-    "sectionSubtitle": "Tell us about your project — we'll get back to you within 24 hours",
+    "sectionSubtitle": "Tell us about your project, we'll get back to you within 24 hours",
     "email": "frogoboxmedia@gmail.com",
     "phone": "+62 8135 7108 568",
     "address": "Probolinggo, East Java, Indonesia",
