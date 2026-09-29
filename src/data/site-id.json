@@ -13,7 +13,7 @@
   "hero": {
     "title": "Kami Membangun Solusi Digital Skalabel",
     "highlight": "Melampaui Batas",
-    "tagline": "Dari konsep hingga deployment — kami merekayasa solusi perangkat lunak tangguh yang mentransformasi bisnis dan mempercepat pertumbuhan.",
+    "tagline": "Dari konsep hingga deployment, kami merekayasa solusi perangkat lunak tangguh yang mentransformasi bisnis dan mempercepat pertumbuhan.",
     "videoUrl": "https://www.youtube.com/embed/68qCWu81CCA",
     "videoId": "68qCWu81CCA",
     "ctaPrimary": {
@@ -66,7 +66,7 @@
   },
   "whyUs": {
     "sectionTitle": "Mengapa Memilih Frogobox?",
-    "sectionSubtitle": "Kami tidak hanya membangun perangkat lunak — kami membangun kemitraan",
+    "sectionSubtitle": "Kami tidak hanya membangun perangkat lunak, kami membangun kemitraan",
     "items": [
       {
         "icon": "rocket",
@@ -86,7 +86,7 @@
       {
         "icon": "handshake",
         "title": "Kemitraan Jangka Panjang",
-        "description": "Kami bukan sekadar vendor — kami adalah mitra teknologi Anda. Dukungan berkelanjutan, pemeliharaan, dan panduan strategis."
+        "description": "Kami bukan sekadar vendor, kami adalah mitra teknologi Anda. Dukungan berkelanjutan, pemeliharaan, dan panduan strategis."
       }
     ]
   },
@@ -96,7 +96,7 @@
     "items": [
       {
         "image": "/images/portfolio-wall-of-fame.png",
-        "title": "Wall of Fame — Sponsor Utama",
+        "title": "Wall of Fame - Sponsor Utama",
         "category": "Website",
         "link": "https://amirisback.github.io/wall-of-fame-angel-sponsor/",
         "description": "Halaman penghargaan dan galeri interaktif yang didedikasikan untuk sponsor utama dan kontributor proyek.",
@@ -372,7 +372,7 @@
   },
   "contact": {
     "sectionTitle": "Hubungi Kami",
-    "sectionSubtitle": "Beri tahu kami tentang proyek Anda — kami akan menghubungi Anda kembali dalam waktu 24 jam",
+    "sectionSubtitle": "Beri tahu kami tentang proyek Anda, kami akan menghubungi Anda kembali dalam waktu 24 jam",
     "email": "frogoboxmedia@gmail.com",
     "phone": "+62 8135 7108 568",
     "address": "Probolinggo, Jawa Timur, Indonesia",
@@ -458,6 +458,10 @@
     "openSource": "Sumber Terbuka",
     "visitWebsite": "Kunjungi Situs",
     "getOnPlayStore": "Unduh di Play Store",
-    "viewRepository": "Lihat Repositori"
+    "viewRepository": "Lihat Repositori",
+    "businessPlan": "Proposal Bisnis",
+    "partnershipProposal": "Proposal Kemitraan",
+    "heroBadgeBusinessPlan": "🚀 Pelajari Proposal Kemitraan Play Store & AdMob",
+    "navBusinessPlan": "Proposal Bisnis"
   }
 }

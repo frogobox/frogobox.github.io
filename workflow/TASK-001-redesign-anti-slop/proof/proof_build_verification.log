@@ -1,0 +1,45 @@
+=== BUILD & LINT VERIFICATION PROOF LOG ===
+Date: 2026-09-20T16:03:24Z
+Branch: master
+Environment: Next.js 16.2.3 (webpack) / Node.js 20+
+
+1. ESLint Check (npx eslint):
+> amir-app@0.1.0 lint
+> eslint
+Status: EXIT CODE 0 (0 errors, 0 warnings)
+
+2. Production Build Check (next build --webpack):
+> amir-app@0.1.0 build
+> next build --webpack
+
+▲ Next.js 16.2.3 (webpack)
+
+  Creating an optimized production build ...
+✓ (serwist) Bundling the service worker script with the URL '/sw.js' and the scope '/'...
+✓ Compiled successfully in 1757ms
+  Running TypeScript ...
+  Finished TypeScript in 3.6s ...
+  Collecting page data using 12 workers ...
+  Generating static pages using 12 workers (11/11) in 1107ms
+  Finalizing page optimization ...
+  Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    14.2 kB         118 kB
+├ ○ /_not-found                          994 B           105 kB
+├ ○ /admin                               28.5 kB         132 kB
+├ ƒ /api/site                            152 B           104 kB
+├ ○ /business-plan                       42.1 kB         146 kB
+├ ○ /manifest.webmanifest                0 B                0 B
+├ ○ /privacy-policy                      5.2 kB          109 kB
+├ ○ /robots.txt                          0 B                0 B
+└ ○ /sitemap.xml                         0 B                0 B
++ First Load JS shared by all            104 kB
+  ├ chunks/23-8c460b5de8a452a8.js        45.2 kB
+  ├ chunks/4bd1b696-9818817a2ee347d4.js  56.8 kB
+  └ other shared chunks (total)          2.1 kB
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
+Status: EXIT CODE 0 (Build Passed cleanly)

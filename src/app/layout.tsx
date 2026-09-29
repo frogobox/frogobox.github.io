@@ -14,7 +14,7 @@ const site = getSiteMeta();
 export const metadata: Metadata = {
   metadataBase: new URL(site.url || "https://frogoboxmedia.com"),
   title: {
-    default: `${site.name} — ${site.tagline}`,
+    default: `${site.name} | ${site.tagline}`,
     template: `%s | ${site.name}`,
   },
   description: site.description,
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: `${site.name} — ${site.tagline}`,
+    title: `${site.name} | ${site.tagline}`,
     description: site.description,
     url: site.url || "https://frogoboxmedia.com",
     siteName: site.name,
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${site.name} — ${site.tagline}`,
+    title: `${site.name} | ${site.tagline}`,
     description: site.description,
     site: "@frogobox",
     creator: "@frogobox",
@@ -218,7 +218,9 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col" suppressHydrationWarning>
+        {children}
+      </body>
     </html>
   );
 }
